@@ -5,3 +5,7 @@ Jupyter Notebooks and SBML files of my SURF project. The project is about export
 1. BioCRNPyler: https://github.com/BuildACell/BioCRNPyler
 2. Bioscrape: https://github.com/biocircuits/bioscrape
 3. Subsbml: https://github.com/BuildACell/subsbml
+
+## Code
+1. ATP regen code- Ankita Roychoudhury
+2. DNA export and vesicle fusion code - Agrima Deedwania
