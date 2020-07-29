@@ -20,7 +20,7 @@
     </listOfUnitDefinitions>
     <listOfCompartments>
       <compartment id="cell_external" name="cell_external" spatialDimensions="3" size="2e-06" units="litre" constant="true"/>
-      <compartment id="cell_2_internal_combined" name="cell_2_internal" spatialDimensions="3" size="0.0001" units="litre" constant="true"/>
+      <compartment id="cell_2_internal_combined" name="cell_2_internal" spatialDimensions="3" size="1e-06" units="litre" constant="true"/>
     </listOfCompartments>
     <listOfSpecies>
       <species id="ssDNA_comp1_external_reservoir_model" name="ssDNA_comp1" compartment="cell_external" initialAmount="50" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>

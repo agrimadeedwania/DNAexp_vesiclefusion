@@ -21,8 +21,8 @@
     <listOfCompartments>
       <compartment id="cell_1_internal_combined" name="cell_1_internal" spatialDimensions="3" size="7e-06" units="litre" constant="true"/>
       <compartment id="cell_external_combined" name="cell_external" spatialDimensions="3" size="1e-06" units="litre" constant="true"/>
-      <compartment id="cell_2_internal_combined" name="cell_2_internal" spatialDimensions="3" size="0.0001" units="litre" constant="true"/>
-      <compartment id="cell_3_internal_combined" name="cell_3_internal" spatialDimensions="3" size="0.0001" units="litre" constant="true"/>
+      <compartment id="cell_2_internal_combined" name="cell_2_internal" spatialDimensions="3" size="1e-06" units="litre" constant="true"/>
+      <compartment id="cell_3_internal_combined" name="cell_3_internal" spatialDimensions="3" size="1e-06" units="litre" constant="true"/>
     </listOfCompartments>
     <listOfSpecies>
       <species id="ssDNA" name="ssDNA" compartment="cell_1_internal_combined" initialAmount="50" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>

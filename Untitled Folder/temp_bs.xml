@@ -1,0 +1,65 @@
+<model>
+<species name="ssDNA_comp1_external_reservoir_model" value="0.0" />
+<species name="ssDNA_comp2_external_reservoir_model" value="50.0" />
+<species name="ssDNA_e_external_reservoir_model" value="0.0" />
+<species name="dsDNA_external_reservoir_model" value="0.0" />
+<species name="atc_e_external_reservoir_model_1_combined" value="10000.0" />
+<species name="atc_i" value="0.0" />
+<species name="dna_h_biocrnpyler_386547" value="1.0" />
+<species name="rna_h_biocrnpyler_386547" value="0.0" />
+<species name="exsA_biocrnpyler_386547" value="0.0" />
+<species name="ATP_biocrnpyler_386547" value="20.0" />
+<species name="ADP_biocrnpyler_386547" value="0.0" />
+<species name="P_biocrnpyler_386547" value="0.0" />
+<species name="complex_dna_h_exsA_biocrnpyler_386547" value="0.0" />
+<species name="gfp_biocrnpyler_386547" value="0.0" />
+
+<parameter name="kf_external_reservoir_model" value="2e-05" />
+<parameter name="kre_external_reservoir_model" value="1e-08" />
+<parameter name="kb" value="0.002" />
+<parameter name="kd" value="1e-05" />
+<parameter name="k" value="4e-05" />
+<parameter name="k_r0_1_biocrnpyler_386547" value="1e-12" />
+<parameter name="k_r2_biocrnpyler_386547" value="0.001875" />
+<parameter name="k_r3_biocrnpyler_386547" value="0.0005" />
+<parameter name="n" value="1.0" />
+<parameter name="K" value="1.0" />
+<parameter name="k_r4_biocrnpyler_386547" value="0.001" />
+<parameter name="DummyVar_BimolecularPropensity_k_0" value="4e-05" />
+<parameter name="DummyVar_UnimolecularPropensity_k_1" value="1e-12" />
+<parameter name="DummyVar_UnimolecularPropensity_k_2" value="0.001875" />
+<parameter name="DummyVar_PositiveProportionalHillPropensity_k_3" value="0.0005" />
+<parameter name="DummyVar_PositiveProportionalHillPropensity_K_4" value="1.0" />
+<parameter name="DummyVar_PositiveProportionalHillPropensity_n_5" value="1.0" />
+<parameter name="DummyVar_UnimolecularPropensity_k_6" value="0.001" />
+
+<reaction text= "ssDNA_comp1_external_reservoir_model + ssDNA_comp2_external_reservoir_model + ssDNA_e_external_reservoir_model -- dsDNA_external_reservoir_model ">
+	<propensity type="general" rate="_kf_external_reservoir_model*ssDNA_comp1_external_reservoir_model*ssDNA_comp2_external_reservoir_model*ssDNA_e_external_reservoir_model - _kre_external_reservoir_model*dsDNA_external_reservoir_model" />
+	<delay type="none" />
+</reaction>
+<reaction text= "atc_e_external_reservoir_model_1_combined -- atc_i ">
+	<propensity type="general" rate="_kb*atc_e_external_reservoir_model_1_combined - _kd*atc_i" />
+	<delay type="none" />
+</reaction>
+<reaction text= "dna_h_biocrnpyler_386547 + exsA_biocrnpyler_386547 -- complex_dna_h_exsA_biocrnpyler_386547 ">
+	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_0" species="dna_h_biocrnpyler_386547*exsA_biocrnpyler_386547" />
+	<delay type="none" />
+</reaction>
+<reaction text= "complex_dna_h_exsA_biocrnpyler_386547 -- dna_h_biocrnpyler_386547 + exsA_biocrnpyler_386547 ">
+	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_1" species="complex_dna_h_exsA_biocrnpyler_386547" />
+	<delay type="none" />
+</reaction>
+<reaction text= "complex_dna_h_exsA_biocrnpyler_386547 -- complex_dna_h_exsA_biocrnpyler_386547 + rna_h_biocrnpyler_386547 ">
+	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_2" species="complex_dna_h_exsA_biocrnpyler_386547" />
+	<delay type="none" />
+</reaction>
+<reaction text= "rna_h_biocrnpyler_386547 + ATP_biocrnpyler_386547 -- rna_h_biocrnpyler_386547 + ADP_biocrnpyler_386547 + gfp_biocrnpyler_386547 + P_biocrnpyler_386547 ">
+	<propensity type="proportionalhillpositive" k="DummyVar_PositiveProportionalHillPropensity_k_3" K="DummyVar_PositiveProportionalHillPropensity_K_4" n="DummyVar_PositiveProportionalHillPropensity_n_5" s1="ATP_biocrnpyler_386547" d="rna_h_biocrnpyler_386547" />
+	<delay type="none" />
+</reaction>
+<reaction text= "rna_h_biocrnpyler_386547 -- ">
+	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_6" species="rna_h_biocrnpyler_386547" />
+	<delay type="none" />
+</reaction>
+
+</model>
