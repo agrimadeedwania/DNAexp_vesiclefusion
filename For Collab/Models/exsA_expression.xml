@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
-  <model id="biocrnpyler_269558" name="biocrnpyler_269558" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
+  <model id="biocrnpyler_875807" name="biocrnpyler_875807" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
     <listOfUnitDefinitions>
       <unitDefinition id="square_metre">
         <listOfUnits>
@@ -12,23 +12,22 @@
       <compartment id="default" name="default" spatialDimensions="3" size="1e-06" constant="true"/>
     </listOfCompartments>
     <listOfSpecies>
-      <species id="dna_g" name="dna_g" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="dna_f" name="dna_f" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="tetR" name="tetR" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="rna_g" name="rna_g" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="VirE2_f" name="VirE2_f" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="rna_f" name="rna_f" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="exsA" name="exsA" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="ATP" name="ATP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="ADP" name="ADP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="atc_i" name="atc_i" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="complex_atc_i_tetR" name="complex_atc_i_tetR" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="VirE2_b" name="VirE2_b" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_dna_g_tetR" name="complex_dna_g_tetR" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_atc_i_dna_g_tetR" name="complex_atc_i_dna_g_tetR" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_dna_f_tetR" name="complex_dna_f_tetR" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_atc_i_dna_f_tetR" name="complex_atc_i_dna_f_tetR" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="P" name="P" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfReactions>
       <reaction id="r0" name="r0" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.0002</PropensityType>
+          <PropensityType> type=massaction k=2e-05</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="atc_i" stoichiometry="1" constant="false"/>
@@ -47,7 +46,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.0002"/>
+            <localParameter id="k" value="2e-05"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -77,26 +76,26 @@
       </reaction>
       <reaction id="r2" name="r2" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=4e-05</PropensityType>
+          <PropensityType> type=massaction k=4e-07</PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="dna_g" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_f" stoichiometry="1" constant="false"/>
           <speciesReference species="tetR" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_dna_g_tetR" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_f_tetR" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> dna_g </ci>
+              <ci> dna_f </ci>
               <ci> tetR </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="4e-05"/>
+            <localParameter id="k" value="4e-07"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -105,10 +104,10 @@
           <PropensityType> type=massaction k=1e-12</PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_dna_g_tetR" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_f_tetR" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna_g" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_f" stoichiometry="1" constant="false"/>
           <speciesReference species="tetR" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
@@ -116,7 +115,7 @@
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_dna_g_tetR </ci>
+              <ci> complex_dna_f_tetR </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -126,26 +125,26 @@
       </reaction>
       <reaction id="r4" name="r4" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=6e-06</PropensityType>
+          <PropensityType> type=massaction k=6e-08</PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_dna_g_tetR" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_f_tetR" stoichiometry="1" constant="false"/>
           <speciesReference species="atc_i" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_atc_i_dna_g_tetR" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_atc_i_dna_f_tetR" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_dna_g_tetR </ci>
+              <ci> complex_dna_f_tetR </ci>
               <ci> atc_i </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="6e-06"/>
+            <localParameter id="k" value="6e-08"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -154,10 +153,10 @@
           <PropensityType> type=massaction k=3e-09</PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_atc_i_dna_g_tetR" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_atc_i_dna_f_tetR" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_dna_g_tetR" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_f_tetR" stoichiometry="1" constant="false"/>
           <speciesReference species="atc_i" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
@@ -165,7 +164,7 @@
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_atc_i_dna_g_tetR </ci>
+              <ci> complex_atc_i_dna_f_tetR </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -175,13 +174,13 @@
       </reaction>
       <reaction id="r6" name="r6" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.005</PropensityType>
+          <PropensityType> type=massaction k=5e-05</PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_atc_i_dna_g_tetR" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_atc_i_dna_f_tetR" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna_g" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_f" stoichiometry="1" constant="false"/>
           <speciesReference species="complex_atc_i_tetR" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
@@ -189,11 +188,11 @@
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_atc_i_dna_g_tetR </ci>
+              <ci> complex_atc_i_dna_f_tetR </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.005"/>
+            <localParameter id="k" value="5e-05"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -202,18 +201,18 @@
           <PropensityType> type=massaction k=1e-10</PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="dna_g" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_f" stoichiometry="1" constant="false"/>
           <speciesReference species="complex_atc_i_tetR" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_atc_i_dna_g_tetR" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_atc_i_dna_f_tetR" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> dna_g </ci>
+              <ci> dna_f </ci>
               <ci> complex_atc_i_tetR </ci>
             </apply>
           </math>
@@ -224,40 +223,40 @@
       </reaction>
       <reaction id="r8" name="r8" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.0031875</PropensityType>
+          <PropensityType> type=massaction k=0.001875</PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="dna_g" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_f" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna_g" stoichiometry="1" constant="false"/>
-          <speciesReference species="rna_g" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_f" stoichiometry="1" constant="false"/>
+          <speciesReference species="rna_f" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> dna_g </ci>
+              <ci> dna_f </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.0031875"/>
+            <localParameter id="k" value="0.001875"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r9" name="r9" reversible="false">
         <annotation>
-          <PropensityType> type=proportionalhillpositive k=0.001 K=1 n=1 s1=ATP d=rna_g</PropensityType>
+          <PropensityType> type=proportionalhillpositive k=0.0005 K=1 n=1 s1=ATP d=rna_f</PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="rna_g" stoichiometry="1" constant="false"/>
+          <speciesReference species="rna_f" stoichiometry="1" constant="false"/>
           <speciesReference species="ATP" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="rna_g" stoichiometry="1" constant="false"/>
+          <speciesReference species="rna_f" stoichiometry="1" constant="false"/>
           <speciesReference species="ADP" stoichiometry="1" constant="false"/>
-          <speciesReference species="VirE2_f" stoichiometry="1" constant="false"/>
+          <speciesReference species="exsA" stoichiometry="1" constant="false"/>
           <speciesReference species="P" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
@@ -267,7 +266,7 @@
               <apply>
                 <times/>
                 <ci> k </ci>
-                <ci> rna_g </ci>
+                <ci> rna_f </ci>
                 <apply>
                   <power/>
                   <ci> ATP </ci>
@@ -286,7 +285,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.001"/>
+            <localParameter id="k" value="0.0005"/>
             <localParameter id="n" value="1"/>
             <localParameter id="K" value="1"/>
           </listOfLocalParameters>
@@ -294,87 +293,21 @@
       </reaction>
       <reaction id="r10" name="r10" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=5e-05</PropensityType>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="VirE2_f" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="VirE2_b" stoichiometry="1" constant="false"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> k </ci>
-              <ci> VirE2_f </ci>
-            </apply>
-          </math>
-          <listOfLocalParameters>
-            <localParameter id="k" value="5e-05"/>
-          </listOfLocalParameters>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r10_1" name="r10_1" reversible="false">
-        <annotation>
-          <PropensityType> type=massaction k=1e-10</PropensityType>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="VirE2_b" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="VirE2_f" stoichiometry="1" constant="false"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> k </ci>
-              <ci> VirE2_b </ci>
-            </apply>
-          </math>
-          <listOfLocalParameters>
-            <localParameter id="k" value="1e-10"/>
-          </listOfLocalParameters>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r12" name="r12" reversible="false">
-        <annotation>
           <PropensityType> type=massaction k=0.001</PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="rna_g" stoichiometry="1" constant="false"/>
+          <speciesReference species="rna_f" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> rna_g </ci>
+              <ci> rna_f </ci>
             </apply>
           </math>
           <listOfLocalParameters>
             <localParameter id="k" value="0.001"/>
-          </listOfLocalParameters>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r13" name="r13" reversible="false">
-        <annotation>
-          <PropensityType> type=massaction k=1e-05</PropensityType>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="VirE2_f" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> k </ci>
-              <ci> VirE2_f </ci>
-            </apply>
-          </math>
-          <listOfLocalParameters>
-            <localParameter id="k" value="1e-05"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
