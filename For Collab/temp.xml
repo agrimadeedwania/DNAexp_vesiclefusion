@@ -20,7 +20,7 @@
     </listOfUnitDefinitions>
     <listOfCompartments>
       <compartment id="fusedcell_external_combined" name="fusedcell_external" spatialDimensions="3" size="0.0002" units="litre" constant="true"/>
-      <compartment id="fusedcell_internal_combined" name="fusedcell_internal" spatialDimensions="3" size="1e-10" units="litre" constant="true"/>
+      <compartment id="fusedcell_internal_combined" name="fusedcell_internal" spatialDimensions="3" size="1e-06" units="litre" constant="true"/>
     </listOfCompartments>
     <listOfSpecies>
       <species id="ssDNA_comp1" name="ssDNA_comp1" compartment="fusedcell_internal_combined" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>

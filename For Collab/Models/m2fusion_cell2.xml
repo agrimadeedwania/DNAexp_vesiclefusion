@@ -20,7 +20,7 @@
     </listOfUnitDefinitions>
     <listOfCompartments>
       <compartment id="cell_external" name="cell_external" spatialDimensions="3" size="0.0001" units="litre" constant="true"/>
-      <compartment id="cell_3_internal_combined" name="cell_3_internal" spatialDimensions="3" size="1e-10" units="litre" constant="true"/>
+      <compartment id="cell_3_internal_combined" name="cell_3_internal" spatialDimensions="3" size="1e-06" units="litre" constant="true"/>
     </listOfCompartments>
     <listOfSpecies>
       <species id="atc_e_external_reservoir_model_1_combined" name="atc_e" compartment="cell_external" initialConcentration="10000" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
