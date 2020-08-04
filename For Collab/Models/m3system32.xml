@@ -64,6 +64,7 @@
       <species id="complex_dna_h_exsA_biocrnpyler_864602" name="complex_dna_h_exsA" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="gfp_biocrnpyler_864602" name="gfp" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="atc_e_external_reservoir_model_1_combined_1_combined" name="atc_e" compartment="cell_external" initialConcentration="10000" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="dsDNA" name="dsDNA" compartment="cell_external_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
       <parameter id="kb1" name="kb1" value="0.004" units="per_second" constant="false"/>
@@ -71,6 +72,8 @@
       <parameter id="kd2" name="kd2" value="0.0025" units="per_second" constant="false"/>
       <parameter id="kb_combined" name="kb" value="0.002" units="per_second" constant="false"/>
       <parameter id="kd_combined" name="kd" value="1e-05" units="per_second" constant="false"/>
+      <parameter id="kf" name="kf" value="100" units="per_second" constant="false"/>
+      <parameter id="kre" name="kre" value="1e-07" units="per_second" constant="false"/>
     </listOfParameters>
     <listOfReactions>
       <reaction id="r1_cell1" reversible="true">
@@ -968,6 +971,35 @@
           <listOfLocalParameters>
             <localParameter id="k" value="0.001"/>
           </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="raa1" name="raa1" reversible="true" compartment="cell_1_internal_combined">
+        <listOfReactants>
+          <speciesReference species="ssDNA_comp1" stoichiometry="1" constant="false"/>
+          <speciesReference species="ssDNA_comp2" stoichiometry="1" constant="false"/>
+          <speciesReference species="ssDNA_e" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="dsDNA" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kf </ci>
+                <ci> ssDNA_comp1 </ci>
+                <ci> ssDNA_comp2 </ci>
+                <ci> ssDNA_e </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> kre </ci>
+                <ci> dsDNA </ci>
+              </apply>
+            </apply>
+          </math>
         </kineticLaw>
       </reaction>
     </listOfReactions>

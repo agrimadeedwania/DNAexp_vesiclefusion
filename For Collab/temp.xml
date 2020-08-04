@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
-  <model id="combined_model_of__combined_model_of__external_reservoir_model_combined_model_of__atc_membrane_combined_model_of__biocrnpyler_386547" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
+  <model id="combined_model_of__combined_model_of__combined_model_of__external_reservoir_model_combined_model_of__atc_membrane2_combined_model_of__biocrnpyler_844781_combined_model_of__combined_model_of__external_reservoir_model_combined_model_of__atc_membrane3_combined_model_of__biocrnpyler_864602" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
     <listOfUnitDefinitions>
       <unitDefinition id="square_metre">
         <listOfUnits>
@@ -19,40 +19,41 @@
       </unitDefinition>
     </listOfUnitDefinitions>
     <listOfCompartments>
-      <compartment id="cell_external" name="cell_external" spatialDimensions="3" size="2e-06" units="litre" constant="true"/>
-      <compartment id="cell_3_internal_combined" name="cell_3_internal" spatialDimensions="3" size="1e-06" units="litre" constant="true"/>
+      <compartment id="fusedcell_external_combined" name="fusedcell_external" spatialDimensions="3" size="0.0002" units="litre" constant="true"/>
+      <compartment id="fusedcell_internal_combined" name="fusedcell_internal" spatialDimensions="3" size="1e-10" units="litre" constant="true"/>
     </listOfCompartments>
     <listOfSpecies>
-      <species id="ssDNA_comp1_external_reservoir_model" name="ssDNA_comp1" compartment="cell_external" initialConcentration="0" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="ssDNA_comp2_external_reservoir_model" name="ssDNA_comp2" compartment="cell_external" initialAmount="50" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="ssDNA_e_external_reservoir_model" name="ssDNA_e" compartment="cell_external" initialConcentration="0" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="dsDNA_external_reservoir_model" name="dsDNA" compartment="cell_external" initialConcentration="0" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="atc_e_external_reservoir_model_1_combined" name="atc_e" compartment="cell_external" initialAmount="10000" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="atc_i" name="atc_i" compartment="cell_3_internal_combined" initialConcentration="0" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="dna_h_biocrnpyler_386547" name="dna_h" compartment="cell_3_internal_combined" initialAmount="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="rna_h_biocrnpyler_386547" name="rna_h" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="exsA_biocrnpyler_386547" name="exsA" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="ATP_biocrnpyler_386547" name="ATP" compartment="cell_3_internal_combined" initialAmount="20" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="ADP_biocrnpyler_386547" name="ADP" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="P_biocrnpyler_386547" name="P" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_dna_h_exsA_biocrnpyler_386547" name="complex_dna_h_exsA" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="gfp_biocrnpyler_386547" name="gfp" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ssDNA_comp1" name="ssDNA_comp1" compartment="fusedcell_internal_combined" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="dna_f_biocrnpyler_844781" name="dna_f" compartment="fusedcell_internal_combined" initialConcentration="0.999757314632691" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="tetR_biocrnpyler_844781" name="tetR" compartment="fusedcell_internal_combined" initialConcentration="1.00731141662207e-07" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="rna_f_biocrnpyler_844781" name="rna_f" compartment="fusedcell_internal_combined" initialConcentration="1.80562303526487" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="atc_i_cell2_1_combined" name="atc_i_cell2" compartment="fusedcell_internal_combined" initialConcentration="9927.28854194494" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_atc_i_cell2_tetR_biocrnpyler_844781" name="complex_atc_i_cell2_tetR" compartment="fusedcell_internal_combined" initialConcentration="9.99975721390156" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_dna_f_tetR_biocrnpyler_844781" name="complex_dna_f_tetR" compartment="fusedcell_internal_combined" initialConcentration="4.84742861732141e-05" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_atc_i_cell2_dna_f_tetR_biocrnpyler_844781" name="complex_atc_i_cell2_dna_f_tetR" compartment="fusedcell_internal_combined" initialConcentration="0.000194211081136665" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="atc_i_cell3" name="atc_i_cell3" compartment="fusedcell_internal_combined" initialConcentration="9937.23882194986" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ssDNA_comp2" name="ssDNA_comp2" compartment="fusedcell_internal_combined" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="dna_h_biocrnpyler_864602" name="dna_h" compartment="fusedcell_internal_combined" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="rna_h_biocrnpyler_864602" name="rna_h" compartment="fusedcell_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="exsA_biocrnpyler_844781_1_combined" name="exsA" compartment="fusedcell_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ATP_biocrnpyler_844781_1_combined" name="ATP" compartment="fusedcell_internal_combined" initialConcentration="15" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ADP_biocrnpyler_844781_1_combined" name="ADP" compartment="fusedcell_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="P_biocrnpyler_844781_1_combined" name="P" compartment="fusedcell_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_dna_h_exsA_biocrnpyler_864602" name="complex_dna_h_exsA" compartment="fusedcell_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="gfp_biocrnpyler_864602" name="gfp" compartment="fusedcell_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="atc_e_external_reservoir_model_1_combined_1_combined" name="atc_e" compartment="fusedcell_external" initialConcentration="62.7611780501517" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
-      <parameter id="kf_external_reservoir_model" name="kf" value="2e-05" units="per_second" constant="false"/>
-      <parameter id="kre_external_reservoir_model" name="kre" value="1e-08" units="per_second" constant="false"/>
-      <parameter id="kb" name="kb" value="0.002" units="per_second" constant="false"/>
-      <parameter id="kd" name="kd" value="1e-05" units="per_second" constant="false"/>
+      <parameter id="kb_combined" name="kb" value="0.002" units="per_second" constant="false"/>
+      <parameter id="kd_combined" name="kd" value="1e-05" units="per_second" constant="false"/>
     </listOfParameters>
     <listOfReactions>
-      <reaction id="rxx1_external_reservoir_model" name="rxx1" reversible="true" compartment="cell_external">
+      <reaction id="r1_cell2" reversible="true">
         <listOfReactants>
-          <speciesReference species="ssDNA_comp1_external_reservoir_model" stoichiometry="1" constant="false"/>
-          <speciesReference species="ssDNA_comp2_external_reservoir_model" stoichiometry="1" constant="false"/>
-          <speciesReference species="ssDNA_e_external_reservoir_model" stoichiometry="1" constant="false"/>
+          <speciesReference species="atc_e_external_reservoir_model_1_combined_1_combined" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dsDNA_external_reservoir_model" stoichiometry="1" constant="false"/>
+          <speciesReference species="atc_i_cell2_1_combined" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -60,87 +61,109 @@
               <minus/>
               <apply>
                 <times/>
-                <ci> kf_external_reservoir_model </ci>
-                <ci> ssDNA_comp1_external_reservoir_model </ci>
-                <ci> ssDNA_comp2_external_reservoir_model </ci>
-                <ci> ssDNA_e_external_reservoir_model </ci>
+                <ci> kb_combined </ci>
+                <ci> atc_e_external_reservoir_model_1_combined_1_combined </ci>
               </apply>
               <apply>
                 <times/>
-                <ci> kre_external_reservoir_model </ci>
-                <ci> dsDNA_external_reservoir_model </ci>
+                <ci> kd_combined </ci>
+                <ci> atc_i_cell2_1_combined </ci>
               </apply>
             </apply>
           </math>
         </kineticLaw>
       </reaction>
-      <reaction id="r1" reversible="true">
-        <listOfReactants>
-          <speciesReference species="atc_e_external_reservoir_model_1_combined" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="atc_i" stoichiometry="1" constant="false"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <minus/>
-              <apply>
-                <times/>
-                <ci> kb </ci>
-                <ci> atc_e_external_reservoir_model_1_combined </ci>
-              </apply>
-              <apply>
-                <times/>
-                <ci> kd </ci>
-                <ci> atc_i </ci>
-              </apply>
-            </apply>
-          </math>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r0_biocrnpyler_386547" name="r0" reversible="false">
+      <reaction id="r0_biocrnpyler_844781" name="r0cell2" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=4e-05  </PropensityType>
+          <PropensityType> type=massaction k=2e-05  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="dna_h_biocrnpyler_386547" stoichiometry="1" constant="false"/>
-          <speciesReference species="exsA_biocrnpyler_386547" stoichiometry="1" constant="false"/>
+          <speciesReference species="atc_i_cell2_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="tetR_biocrnpyler_844781" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_dna_h_exsA_biocrnpyler_386547" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_atc_i_cell2_tetR_biocrnpyler_844781" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> dna_h_biocrnpyler_386547 </ci>
-              <ci> exsA_biocrnpyler_386547 </ci>
+              <ci> atc_i_cell2_1_combined </ci>
+              <ci> tetR_biocrnpyler_844781 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="4e-05"/>
+            <localParameter id="k" value="2e-05"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r0_1_biocrnpyler_386547" name="r0_1" reversible="false">
+      <reaction id="r0_1_biocrnpyler_844781" name="r0_1cell2" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=2e-09  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_atc_i_cell2_tetR_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="atc_i_cell2_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="tetR_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_atc_i_cell2_tetR_biocrnpyler_844781 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="2e-09"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r2_biocrnpyler_844781" name="r2" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=4e-07  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="dna_f_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+          <speciesReference species="tetR_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_dna_f_tetR_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> dna_f_biocrnpyler_844781 </ci>
+              <ci> tetR_biocrnpyler_844781 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="4e-07"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r2_1_biocrnpyler_844781" name="r2_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=1e-12  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_dna_h_exsA_biocrnpyler_386547" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_f_tetR_biocrnpyler_844781" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna_h_biocrnpyler_386547" stoichiometry="1" constant="false"/>
-          <speciesReference species="exsA_biocrnpyler_386547" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_f_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+          <speciesReference species="tetR_biocrnpyler_844781" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_dna_h_exsA_biocrnpyler_386547 </ci>
+              <ci> complex_dna_f_tetR_biocrnpyler_844781 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -148,23 +171,121 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r2_biocrnpyler_386547" name="r2" reversible="false">
+      <reaction id="r4_biocrnpyler_844781" name="r4" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.001875  </PropensityType>
+          <PropensityType> type=massaction k=6e-08  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_dna_h_exsA_biocrnpyler_386547" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_f_tetR_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+          <speciesReference species="atc_i_cell2_1_combined" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_dna_h_exsA_biocrnpyler_386547" stoichiometry="1" constant="false"/>
-          <speciesReference species="rna_h_biocrnpyler_386547" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_atc_i_cell2_dna_f_tetR_biocrnpyler_844781" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_dna_h_exsA_biocrnpyler_386547 </ci>
+              <ci> complex_dna_f_tetR_biocrnpyler_844781 </ci>
+              <ci> atc_i_cell2_1_combined </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="6e-08"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r4_1_biocrnpyler_844781" name="r4_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=3e-09  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_atc_i_cell2_dna_f_tetR_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_dna_f_tetR_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+          <speciesReference species="atc_i_cell2_1_combined" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_atc_i_cell2_dna_f_tetR_biocrnpyler_844781 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="3e-09"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r6_biocrnpyler_844781" name="r6" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5e-05  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_atc_i_cell2_dna_f_tetR_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="dna_f_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_atc_i_cell2_tetR_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_atc_i_cell2_dna_f_tetR_biocrnpyler_844781 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5e-05"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r6_1_biocrnpyler_844781" name="r6_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=1e-10  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="dna_f_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_atc_i_cell2_tetR_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_atc_i_cell2_dna_f_tetR_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> dna_f_biocrnpyler_844781 </ci>
+              <ci> complex_atc_i_cell2_tetR_biocrnpyler_844781 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="1e-10"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r8_biocrnpyler_844781" name="r8" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.001875  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="dna_f_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="dna_f_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+          <speciesReference species="rna_f_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> dna_f_biocrnpyler_844781 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -172,19 +293,19 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r3_biocrnpyler_386547" name="r3" reversible="false">
+      <reaction id="r9_biocrnpyler_844781" name="r9" reversible="false">
         <annotation>
-          <PropensityType> type=proportionalhillpositive k=0.0005 K=1 n=1 s1=ATP_biocrnpyler_386547 d=rna_h_biocrnpyler_386547  </PropensityType>
+          <PropensityType> type=proportionalhillpositive k=0.0005 K=1 n=1 s1=ATP_biocrnpyler_844781_1_combined d=rna_f_biocrnpyler_844781  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="rna_h_biocrnpyler_386547" stoichiometry="1" constant="false"/>
-          <speciesReference species="ATP_biocrnpyler_386547" stoichiometry="1" constant="false"/>
+          <speciesReference species="rna_f_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+          <speciesReference species="ATP_biocrnpyler_844781_1_combined" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="rna_h_biocrnpyler_386547" stoichiometry="1" constant="false"/>
-          <speciesReference species="ADP_biocrnpyler_386547" stoichiometry="1" constant="false"/>
-          <speciesReference species="gfp_biocrnpyler_386547" stoichiometry="1" constant="false"/>
-          <speciesReference species="P_biocrnpyler_386547" stoichiometry="1" constant="false"/>
+          <speciesReference species="rna_f_biocrnpyler_844781" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_biocrnpyler_844781_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="exsA_biocrnpyler_844781_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="P_biocrnpyler_844781_1_combined" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -193,10 +314,10 @@
               <apply>
                 <times/>
                 <ci> k </ci>
-                <ci> rna_h_biocrnpyler_386547 </ci>
+                <ci> rna_f_biocrnpyler_844781 </ci>
                 <apply>
                   <power/>
-                  <ci> ATP_biocrnpyler_386547 </ci>
+                  <ci> ATP_biocrnpyler_844781_1_combined </ci>
                   <ci> n </ci>
                 </apply>
               </apply>
@@ -204,7 +325,7 @@
                 <plus/>
                 <apply>
                   <power/>
-                  <ci> ATP_biocrnpyler_386547 </ci>
+                  <ci> ATP_biocrnpyler_844781_1_combined </ci>
                   <ci> n </ci>
                 </apply>
                 <ci> K </ci>
@@ -218,19 +339,183 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r4_biocrnpyler_386547" name="r4" reversible="false">
+      <reaction id="r10_biocrnpyler_844781" name="r10" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=0.001  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="rna_h_biocrnpyler_386547" stoichiometry="1" constant="false"/>
+          <speciesReference species="rna_f_biocrnpyler_844781" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> rna_h_biocrnpyler_386547 </ci>
+              <ci> rna_f_biocrnpyler_844781 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.001"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r1_cell3" reversible="true">
+        <listOfReactants>
+          <speciesReference species="atc_e_external_reservoir_model_1_combined_1_combined" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="atc_i_cell3" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kb_combined </ci>
+                <ci> atc_e_external_reservoir_model_1_combined_1_combined </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> kd_combined </ci>
+                <ci> atc_i_cell3 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r0_biocrnpyler_864602" name="r0" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=4e-05  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="dna_h_biocrnpyler_864602" stoichiometry="1" constant="false"/>
+          <speciesReference species="exsA_biocrnpyler_844781_1_combined" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_dna_h_exsA_biocrnpyler_864602" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> dna_h_biocrnpyler_864602 </ci>
+              <ci> exsA_biocrnpyler_844781_1_combined </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="4e-05"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r0_1_biocrnpyler_864602" name="r0_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=1e-12  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_dna_h_exsA_biocrnpyler_864602" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="dna_h_biocrnpyler_864602" stoichiometry="1" constant="false"/>
+          <speciesReference species="exsA_biocrnpyler_844781_1_combined" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_dna_h_exsA_biocrnpyler_864602 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="1e-12"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r2_biocrnpyler_864602" name="r2" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.001875  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_dna_h_exsA_biocrnpyler_864602" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_dna_h_exsA_biocrnpyler_864602" stoichiometry="1" constant="false"/>
+          <speciesReference species="rna_h_biocrnpyler_864602" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_dna_h_exsA_biocrnpyler_864602 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.001875"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r3_biocrnpyler_864602" name="r3" reversible="false">
+        <annotation>
+          <PropensityType> type=proportionalhillpositive k=0.0005 K=1 n=1 s1=ATP_biocrnpyler_844781_1_combined d=rna_h_biocrnpyler_864602  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="rna_h_biocrnpyler_864602" stoichiometry="1" constant="false"/>
+          <speciesReference species="ATP_biocrnpyler_844781_1_combined" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rna_h_biocrnpyler_864602" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_biocrnpyler_844781_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="gfp_biocrnpyler_864602" stoichiometry="1" constant="false"/>
+          <speciesReference species="P_biocrnpyler_844781_1_combined" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k </ci>
+                <ci> rna_h_biocrnpyler_864602 </ci>
+                <apply>
+                  <power/>
+                  <ci> ATP_biocrnpyler_844781_1_combined </ci>
+                  <ci> n </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <power/>
+                  <ci> ATP_biocrnpyler_844781_1_combined </ci>
+                  <ci> n </ci>
+                </apply>
+                <ci> K </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.0005"/>
+            <localParameter id="n" value="1"/>
+            <localParameter id="K" value="1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r4_biocrnpyler_864602" name="r4" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.001  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="rna_h_biocrnpyler_864602" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> rna_h_biocrnpyler_864602 </ci>
             </apply>
           </math>
           <listOfLocalParameters>

@@ -18,15 +18,16 @@
       <compartment id="external" name="external" spatialDimensions="3" size="1e-06" units="litre" constant="true"/>
     </listOfCompartments>
     <listOfSpecies>
-      <species id="ssDNA_e" name="ssDNA_e" compartment="external" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="ssDNA" name="ssDNA" compartment="internal" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="VirE2_b" name="VirE2_b" compartment="internal" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="VirE2_b_ssDNA" name="VirE2_b_ssDNA" compartment="internal" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ssDNA_e" name="ssDNA_e" compartment="external" initialConcentration="0" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ssDNA" name="ssDNA" compartment="internal" initialConcentration="0" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="VirE2_b" name="VirE2_b" compartment="internal" initialConcentration="1" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="VirE2_b_ssDNA" name="VirE2_b_ssDNA" compartment="internal" initialConcentration="0" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
-      <parameter id="kb1" name="kb1" value="0.004" units="per_second" constant="false"/>
-      <parameter id="kd1" name="kd1" value="1e-05" units="per_second" constant="false"/>
-      <parameter id="kd2" name="kd2" value="0.0025" units="per_second" constant="false"/>
+      <parameter id="kb1" name="kb1" value="0.0002" units="per_second" constant="false"/>
+      <parameter id="kd1" name="kd1" value="0.0001" units="per_second" constant="false"/>
+      <parameter id="kb2" name="kb2" value="0.002" units="per_second" constant="false"/>
+      <parameter id="kd2" name="kd2" value="0.1" units="per_second" constant="false"/>
     </listOfParameters>
     <listOfReactions>
       <reaction id="R1" reversible="true">
@@ -56,7 +57,7 @@
           </math>
         </kineticLaw>
       </reaction>
-      <reaction id="R2" reversible="false">
+      <reaction id="R2" reversible="true">
         <listOfReactants>
           <speciesReference species="VirE2_b_ssDNA" stoichiometry="1" constant="false"/>
         </listOfReactants>
@@ -67,9 +68,18 @@
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
-              <times/>
-              <ci> kd2 </ci>
-              <ci> VirE2_b_ssDNA </ci>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kd2 </ci>
+                <ci> VirE2_b_ssDNA </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> kb2 </ci>
+                <ci> VirE2_b </ci>
+                <ci> ssDNA_e </ci>
+              </apply>
             </apply>
           </math>
         </kineticLaw>

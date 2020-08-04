@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
-  <model id="biocrnpyler_386542" name="biocrnpyler_386542" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
+  <model id="biocrnpyler_553971" name="biocrnpyler_553971" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
     <listOfUnitDefinitions>
       <unitDefinition id="square_metre">
         <listOfUnits>
@@ -294,7 +294,7 @@
       </reaction>
       <reaction id="r10" name="r10" reversible="false">
         <annotation>
-          <PropensityType> type=proportionalhillnegative k=0.0005 K=1 n=1 s1=VirE2_b d=VirE2_f</PropensityType>
+          <PropensityType> type=massaction k=0.001</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="VirE2_f" stoichiometry="1" constant="false"/>
@@ -305,31 +305,40 @@
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
-              <divide/>
-              <apply>
-                <times/>
-                <ci> k </ci>
-                <ci> VirE2_f </ci>
-              </apply>
-              <apply>
-                <plus/>
-                <apply>
-                  <power/>
-                  <ci> VirE2_b </ci>
-                  <ci> n </ci>
-                </apply>
-                <ci> K </ci>
-              </apply>
+              <times/>
+              <ci> k </ci>
+              <ci> VirE2_f </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.0005"/>
-            <localParameter id="n" value="1"/>
-            <localParameter id="K" value="1"/>
+            <localParameter id="k" value="0.001"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r11" name="r11" reversible="false">
+      <reaction id="r10_1" name="r10_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=1e-10</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="VirE2_b" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="VirE2_f" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> VirE2_b </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="1e-10"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r12" name="r12" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=0.001</PropensityType>
         </annotation>
@@ -349,7 +358,7 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r12" name="r12" reversible="false">
+      <reaction id="r13" name="r13" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=1e-05</PropensityType>
         </annotation>

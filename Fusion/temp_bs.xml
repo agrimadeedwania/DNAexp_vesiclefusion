@@ -1,37 +1,37 @@
 <model>
-<species name="dna_f_biocrnpyler_652128" value="1.0" />
-<species name="tetR_biocrnpyler_652128" value="10.0" />
-<species name="rna_f_biocrnpyler_652128" value="0.0" />
-<species name="atc_i_1_combined" value="0.0" />
-<species name="complex_atc_i_tetR_biocrnpyler_652128" value="0.0" />
-<species name="complex_dna_f_tetR_biocrnpyler_652128" value="0.0" />
-<species name="complex_atc_i_dna_f_tetR_biocrnpyler_652128" value="0.0" />
+<species name="dna_f_biocrnpyler_151102" value="1.0" />
+<species name="tetR_biocrnpyler_151102" value="10.0" />
+<species name="rna_f_biocrnpyler_151102" value="0.0" />
+<species name="atc_i_biocrnpyler_151102" value="0.0" />
+<species name="complex_atc_i_tetR_biocrnpyler_151102" value="0.0" />
+<species name="complex_dna_f_tetR_biocrnpyler_151102" value="0.0" />
+<species name="complex_atc_i_dna_f_tetR_biocrnpyler_151102" value="0.0" />
+<species name="atc_e_external_reservoir_model_1_combined" value="10000.0" />
 <species name="atc_i" value="0.0" />
 <species name="dna_h_biocrnpyler_942793" value="1.0" />
 <species name="rna_h_biocrnpyler_942793" value="0.0" />
-<species name="exsA_biocrnpyler_652128_1_combined" value="0.0" />
-<species name="ATP_biocrnpyler_652128_1_combined" value="20.0" />
-<species name="ADP_biocrnpyler_652128_1_combined" value="0.0" />
-<species name="P_biocrnpyler_652128_1_combined" value="0.0" />
+<species name="exsA_biocrnpyler_151102_1_combined" value="0.0" />
+<species name="ATP_biocrnpyler_151102_1_combined" value="20.0" />
+<species name="ADP_biocrnpyler_151102_1_combined" value="0.0" />
+<species name="P_biocrnpyler_151102_1_combined" value="0.0" />
 <species name="complex_dna_h_exsA_biocrnpyler_942793" value="0.0" />
 <species name="gfp_biocrnpyler_942793" value="0.0" />
-<species name="atc_e_external_reservoir_model_1_combined_1_combined" value="10000.0" />
 
-<parameter name="kb_combined" value="0.002" />
-<parameter name="kd_combined" value="1e-05" />
+<parameter name="kb" value="0.002" />
+<parameter name="kd" value="1e-05" />
 <parameter name="k" value="2e-05" />
-<parameter name="k_r0_1_biocrnpyler_652128" value="2e-09" />
-<parameter name="k_r2_biocrnpyler_652128" value="4e-07" />
-<parameter name="k_r2_1_biocrnpyler_652128" value="1e-12" />
-<parameter name="k_r4_biocrnpyler_652128" value="6e-08" />
-<parameter name="k_r4_1_biocrnpyler_652128" value="3e-09" />
-<parameter name="k_r6_biocrnpyler_652128" value="5e-05" />
-<parameter name="k_r6_1_biocrnpyler_652128" value="1e-10" />
-<parameter name="k_r8_biocrnpyler_652128" value="0.001875" />
-<parameter name="k_r9_biocrnpyler_652128" value="0.0007" />
+<parameter name="k_r0_1_biocrnpyler_151102" value="2e-09" />
+<parameter name="k_r2_biocrnpyler_151102" value="4e-07" />
+<parameter name="k_r2_1_biocrnpyler_151102" value="1e-12" />
+<parameter name="k_r4_biocrnpyler_151102" value="6e-08" />
+<parameter name="k_r4_1_biocrnpyler_151102" value="3e-09" />
+<parameter name="k_r6_biocrnpyler_151102" value="5e-05" />
+<parameter name="k_r6_1_biocrnpyler_151102" value="1e-10" />
+<parameter name="k_r8_biocrnpyler_151102" value="0.001875" />
+<parameter name="k_r9_biocrnpyler_151102" value="0.0007" />
 <parameter name="n" value="1.0" />
 <parameter name="K" value="1.0" />
-<parameter name="k_r10_biocrnpyler_652128" value="0.001" />
+<parameter name="k_r10_biocrnpyler_151102" value="0.001" />
 <parameter name="k_r0_biocrnpyler_942793" value="4e-05" />
 <parameter name="k_r0_1_biocrnpyler_942793" value="1e-12" />
 <parameter name="k_r2_biocrnpyler_942793" value="0.001875" />
@@ -60,55 +60,59 @@
 <parameter name="DummyVar_PositiveProportionalHillPropensity_n_18" value="1.0" />
 <parameter name="DummyVar_UnimolecularPropensity_k_19" value="0.001" />
 
-<reaction text= "atc_i_1_combined + tetR_biocrnpyler_652128 -- complex_atc_i_tetR_biocrnpyler_652128 ">
-	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_0" species="atc_i_1_combined*tetR_biocrnpyler_652128" />
+<reaction text= "atc_i_biocrnpyler_151102 + tetR_biocrnpyler_151102 -- complex_atc_i_tetR_biocrnpyler_151102 ">
+	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_0" species="atc_i_biocrnpyler_151102*tetR_biocrnpyler_151102" />
 	<delay type="none" />
 </reaction>
-<reaction text= "complex_atc_i_tetR_biocrnpyler_652128 -- atc_i_1_combined + tetR_biocrnpyler_652128 ">
-	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_1" species="complex_atc_i_tetR_biocrnpyler_652128" />
+<reaction text= "complex_atc_i_tetR_biocrnpyler_151102 -- atc_i_biocrnpyler_151102 + tetR_biocrnpyler_151102 ">
+	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_1" species="complex_atc_i_tetR_biocrnpyler_151102" />
 	<delay type="none" />
 </reaction>
-<reaction text= "dna_f_biocrnpyler_652128 + tetR_biocrnpyler_652128 -- complex_dna_f_tetR_biocrnpyler_652128 ">
-	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_2" species="dna_f_biocrnpyler_652128*tetR_biocrnpyler_652128" />
+<reaction text= "dna_f_biocrnpyler_151102 + tetR_biocrnpyler_151102 -- complex_dna_f_tetR_biocrnpyler_151102 ">
+	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_2" species="dna_f_biocrnpyler_151102*tetR_biocrnpyler_151102" />
 	<delay type="none" />
 </reaction>
-<reaction text= "complex_dna_f_tetR_biocrnpyler_652128 -- dna_f_biocrnpyler_652128 + tetR_biocrnpyler_652128 ">
-	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_3" species="complex_dna_f_tetR_biocrnpyler_652128" />
+<reaction text= "complex_dna_f_tetR_biocrnpyler_151102 -- dna_f_biocrnpyler_151102 + tetR_biocrnpyler_151102 ">
+	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_3" species="complex_dna_f_tetR_biocrnpyler_151102" />
 	<delay type="none" />
 </reaction>
-<reaction text= "complex_dna_f_tetR_biocrnpyler_652128 + atc_i_1_combined -- complex_atc_i_dna_f_tetR_biocrnpyler_652128 ">
-	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_4" species="complex_dna_f_tetR_biocrnpyler_652128*atc_i_1_combined" />
+<reaction text= "complex_dna_f_tetR_biocrnpyler_151102 + atc_i_biocrnpyler_151102 -- complex_atc_i_dna_f_tetR_biocrnpyler_151102 ">
+	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_4" species="complex_dna_f_tetR_biocrnpyler_151102*atc_i_biocrnpyler_151102" />
 	<delay type="none" />
 </reaction>
-<reaction text= "complex_atc_i_dna_f_tetR_biocrnpyler_652128 -- complex_dna_f_tetR_biocrnpyler_652128 + atc_i_1_combined ">
-	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_5" species="complex_atc_i_dna_f_tetR_biocrnpyler_652128" />
+<reaction text= "complex_atc_i_dna_f_tetR_biocrnpyler_151102 -- complex_dna_f_tetR_biocrnpyler_151102 + atc_i_biocrnpyler_151102 ">
+	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_5" species="complex_atc_i_dna_f_tetR_biocrnpyler_151102" />
 	<delay type="none" />
 </reaction>
-<reaction text= "complex_atc_i_dna_f_tetR_biocrnpyler_652128 -- dna_f_biocrnpyler_652128 + complex_atc_i_tetR_biocrnpyler_652128 ">
-	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_6" species="complex_atc_i_dna_f_tetR_biocrnpyler_652128" />
+<reaction text= "complex_atc_i_dna_f_tetR_biocrnpyler_151102 -- dna_f_biocrnpyler_151102 + complex_atc_i_tetR_biocrnpyler_151102 ">
+	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_6" species="complex_atc_i_dna_f_tetR_biocrnpyler_151102" />
 	<delay type="none" />
 </reaction>
-<reaction text= "dna_f_biocrnpyler_652128 + complex_atc_i_tetR_biocrnpyler_652128 -- complex_atc_i_dna_f_tetR_biocrnpyler_652128 ">
-	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_7" species="dna_f_biocrnpyler_652128*complex_atc_i_tetR_biocrnpyler_652128" />
+<reaction text= "dna_f_biocrnpyler_151102 + complex_atc_i_tetR_biocrnpyler_151102 -- complex_atc_i_dna_f_tetR_biocrnpyler_151102 ">
+	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_7" species="dna_f_biocrnpyler_151102*complex_atc_i_tetR_biocrnpyler_151102" />
 	<delay type="none" />
 </reaction>
-<reaction text= "dna_f_biocrnpyler_652128 -- dna_f_biocrnpyler_652128 + rna_f_biocrnpyler_652128 ">
-	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_8" species="dna_f_biocrnpyler_652128" />
+<reaction text= "dna_f_biocrnpyler_151102 -- dna_f_biocrnpyler_151102 + rna_f_biocrnpyler_151102 ">
+	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_8" species="dna_f_biocrnpyler_151102" />
 	<delay type="none" />
 </reaction>
-<reaction text= "rna_f_biocrnpyler_652128 + ATP_biocrnpyler_652128_1_combined -- rna_f_biocrnpyler_652128 + ADP_biocrnpyler_652128_1_combined + exsA_biocrnpyler_652128_1_combined + P_biocrnpyler_652128_1_combined ">
-	<propensity type="proportionalhillpositive" k="DummyVar_PositiveProportionalHillPropensity_k_9" K="DummyVar_PositiveProportionalHillPropensity_K_10" n="DummyVar_PositiveProportionalHillPropensity_n_11" s1="ATP_biocrnpyler_652128_1_combined" d="rna_f_biocrnpyler_652128" />
+<reaction text= "rna_f_biocrnpyler_151102 + ATP_biocrnpyler_151102_1_combined -- rna_f_biocrnpyler_151102 + ADP_biocrnpyler_151102_1_combined + exsA_biocrnpyler_151102_1_combined + P_biocrnpyler_151102_1_combined ">
+	<propensity type="proportionalhillpositive" k="DummyVar_PositiveProportionalHillPropensity_k_9" K="DummyVar_PositiveProportionalHillPropensity_K_10" n="DummyVar_PositiveProportionalHillPropensity_n_11" s1="ATP_biocrnpyler_151102_1_combined" d="rna_f_biocrnpyler_151102" />
 	<delay type="none" />
 </reaction>
-<reaction text= "rna_f_biocrnpyler_652128 -- ">
-	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_12" species="rna_f_biocrnpyler_652128" />
+<reaction text= "rna_f_biocrnpyler_151102 -- ">
+	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_12" species="rna_f_biocrnpyler_151102" />
 	<delay type="none" />
 </reaction>
-<reaction text= "dna_h_biocrnpyler_942793 + exsA_biocrnpyler_652128_1_combined -- complex_dna_h_exsA_biocrnpyler_942793 ">
-	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_13" species="dna_h_biocrnpyler_942793*exsA_biocrnpyler_652128_1_combined" />
+<reaction text= "atc_e_external_reservoir_model_1_combined -- atc_i ">
+	<propensity type="general" rate="_kb*atc_e_external_reservoir_model_1_combined - _kd*atc_i" />
 	<delay type="none" />
 </reaction>
-<reaction text= "complex_dna_h_exsA_biocrnpyler_942793 -- dna_h_biocrnpyler_942793 + exsA_biocrnpyler_652128_1_combined ">
+<reaction text= "dna_h_biocrnpyler_942793 + exsA_biocrnpyler_151102_1_combined -- complex_dna_h_exsA_biocrnpyler_942793 ">
+	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_13" species="dna_h_biocrnpyler_942793*exsA_biocrnpyler_151102_1_combined" />
+	<delay type="none" />
+</reaction>
+<reaction text= "complex_dna_h_exsA_biocrnpyler_942793 -- dna_h_biocrnpyler_942793 + exsA_biocrnpyler_151102_1_combined ">
 	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_14" species="complex_dna_h_exsA_biocrnpyler_942793" />
 	<delay type="none" />
 </reaction>
@@ -116,8 +120,8 @@
 	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_15" species="complex_dna_h_exsA_biocrnpyler_942793" />
 	<delay type="none" />
 </reaction>
-<reaction text= "rna_h_biocrnpyler_942793 + ATP_biocrnpyler_652128_1_combined -- rna_h_biocrnpyler_942793 + ADP_biocrnpyler_652128_1_combined + gfp_biocrnpyler_942793 + P_biocrnpyler_652128_1_combined ">
-	<propensity type="proportionalhillpositive" k="DummyVar_PositiveProportionalHillPropensity_k_16" K="DummyVar_PositiveProportionalHillPropensity_K_17" n="DummyVar_PositiveProportionalHillPropensity_n_18" s1="ATP_biocrnpyler_652128_1_combined" d="rna_h_biocrnpyler_942793" />
+<reaction text= "rna_h_biocrnpyler_942793 + ATP_biocrnpyler_151102_1_combined -- rna_h_biocrnpyler_942793 + ADP_biocrnpyler_151102_1_combined + gfp_biocrnpyler_942793 + P_biocrnpyler_151102_1_combined ">
+	<propensity type="proportionalhillpositive" k="DummyVar_PositiveProportionalHillPropensity_k_16" K="DummyVar_PositiveProportionalHillPropensity_K_17" n="DummyVar_PositiveProportionalHillPropensity_n_18" s1="ATP_biocrnpyler_151102_1_combined" d="rna_h_biocrnpyler_942793" />
 	<delay type="none" />
 </reaction>
 <reaction text= "rna_h_biocrnpyler_942793 -- ">

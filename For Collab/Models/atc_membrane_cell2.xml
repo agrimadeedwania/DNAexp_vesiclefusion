@@ -18,8 +18,8 @@
       <compartment id="external" name="external" spatialDimensions="3" size="1e-06" units="litre" constant="true"/>
     </listOfCompartments>
     <listOfSpecies>
-      <species id="atc_e" name="atc_e" compartment="external" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="atc_i" name="atc_i" compartment="internal" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="atc_e" name="atc_e" compartment="external" initialConcentration="10000" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="atc_i_cell2" name="atc_i_cell2" compartment="internal" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="ssDNA_comp1" name="ssDNA_comp1" compartment="internal" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
@@ -32,7 +32,7 @@
           <speciesReference species="atc_e" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="atc_i" stoichiometry="1" constant="false"/>
+          <speciesReference species="atc_i_cell2" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -46,7 +46,7 @@
               <apply>
                 <times/>
                 <ci> kd </ci>
-                <ci> atc_i </ci>
+                <ci> atc_i_cell2 </ci>
               </apply>
             </apply>
           </math>
