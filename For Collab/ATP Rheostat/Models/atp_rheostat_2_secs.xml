@@ -1,0 +1,2149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
+  <model id="biocrnpyler_334638" name="biocrnpyler_334638" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
+    <listOfUnitDefinitions>
+      <unitDefinition id="square_metre">
+        <listOfUnits>
+          <unit kind="metre" exponent="2" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment id="default" name="default" spatialDimensions="3" size="1e-06" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="enzyme_hex" name="enzyme_hex" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="metabolite_atp" name="metabolite_atp" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_glucose" name="molecule_glucose" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_g6p" name="molecule_g6p" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="metabolite_adp" name="metabolite_adp" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_hex_metabolite_atp_molecule_glucose" name="complex_enzyme_hex_metabolite_atp_molecule_glucose" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_hex_metabolite_adp_molecule_g6p" name="complex_enzyme_hex_metabolite_adp_molecule_g6p" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_pgi" name="enzyme_pgi" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_f6p" name="molecule_f6p" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pgi_molecule_g6p" name="complex_enzyme_pgi_molecule_g6p" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pgi_molecule_f6p" name="complex_enzyme_pgi_molecule_f6p" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_pfk" name="enzyme_pfk" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_f16p" name="molecule_f16p" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pfk_metabolite_atp_molecule_f6p" name="complex_enzyme_pfk_metabolite_atp_molecule_f6p" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pfk_metabolite_adp_molecule_f16p" name="complex_enzyme_pfk_metabolite_adp_molecule_f16p" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_ald_tpi" name="enzyme_ald_tpi" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_g3p" name="molecule_g3p" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_ald_tpi_molecule_f16p" name="complex_enzyme_ald_tpi_molecule_f16p" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_ald_tpi_2x_molecule_g3p" name="complex_enzyme_ald_tpi_2x_molecule_g3p" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_gapN" name="enzyme_gapN" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="metabolite_nadp" name="metabolite_nadp" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_3pg" name="molecule_3pg" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="metabolite_nadph" name="metabolite_nadph" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p" name="complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_gapN_2x_metabolite_nadph_2x_molecule_3pg" name="complex_enzyme_gapN_2x_metabolite_nadph_2x_molecule_3pg" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_mGapDH" name="enzyme_mGapDH" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="metabolite_pi" name="metabolite_pi" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_13bpg" name="molecule_13bpg" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p" name="complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_mGapDH_2x_metabolite_nadph_molecule_13bpg" name="complex_enzyme_mGapDH_2x_metabolite_nadph_molecule_13bpg" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_pgk" name="enzyme_pgk" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pgk_metabolite_adp_molecule_13bpg" name="complex_enzyme_pgk_metabolite_adp_molecule_13bpg" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg" name="complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_pgm" name="enzyme_pgm" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_2pg" name="molecule_2pg" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pgm_2x_molecule_3pg" name="complex_enzyme_pgm_2x_molecule_3pg" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pgm_2x_molecule_2pg" name="complex_enzyme_pgm_2x_molecule_2pg" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_eno" name="enzyme_eno" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_pep" name="molecule_pep" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_eno_2x_molecule_2pg" name="complex_enzyme_eno_2x_molecule_2pg" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_eno_2x_molecule_pep" name="complex_enzyme_eno_2x_molecule_pep" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_pyk" name="enzyme_pyk" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_pyruvate" name="molecule_pyruvate" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep" name="complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate" name="complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_alsS" name="enzyme_alsS" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_acetolac" name="molecule_acetolac" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_alsS_2x_molecule_pyruvate" name="complex_enzyme_alsS_2x_molecule_pyruvate" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_alsS_molecule_acetolac" name="complex_enzyme_alsS_molecule_acetolac" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_IlvC" name="enzyme_IlvC" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_23dih3mebut" name="molecule_23dih3mebut" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_IlvC_metabolite_nadph_molecule_acetolac" name="complex_enzyme_IlvC_metabolite_nadph_molecule_acetolac" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_IlvC_metabolite_nadp_molecule_23dih3mebut" name="complex_enzyme_IlvC_metabolite_nadp_molecule_23dih3mebut" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_IlvD" name="enzyme_IlvD" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_3me2oxo" name="molecule_3me2oxo" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_IlvD_molecule_23dih3mebut" name="complex_enzyme_IlvD_molecule_23dih3mebut" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_IlvD_molecule_3me2oxo" name="complex_enzyme_IlvD_molecule_3me2oxo" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_kivD" name="enzyme_kivD" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_isobutanal" name="molecule_isobutanal" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_kivD_molecule_3me2oxo" name="complex_enzyme_kivD_molecule_3me2oxo" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_kivD_molecule_isobutanal" name="complex_enzyme_kivD_molecule_isobutanal" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_yahk" name="enzyme_yahk" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_isobutanol" name="molecule_isobutanol" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal" name="complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_yahk_metabolite_nadp_molecule_isobutanol" name="complex_enzyme_yahk_metabolite_nadp_molecule_isobutanol" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_atp_use" name="enzyme_atp_use" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_atp_use_metabolite_atp" name="complex_enzyme_atp_use_metabolite_atp" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_atp_use_metabolite_adp_metabolite_pi" name="complex_enzyme_atp_use_metabolite_adp_metabolite_pi" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="r0" name="r0" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_hex" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_atp" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_glucose" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_hex_metabolite_atp_molecule_glucose" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_hex </ci>
+              <ci> metabolite_atp </ci>
+              <ci> molecule_glucose </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r0_1" name="r0_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_hex_metabolite_atp_molecule_glucose" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_hex" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_atp" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_glucose" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_hex_metabolite_atp_molecule_glucose </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r2" name="r2" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_hex_metabolite_atp_molecule_glucose" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_hex_metabolite_adp_molecule_g6p" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_hex_metabolite_atp_molecule_glucose </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r3" name="r3" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_hex_metabolite_adp_molecule_g6p" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_hex" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_g6p" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_adp" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_hex_metabolite_adp_molecule_g6p </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r3_1" name="r3_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_hex" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_g6p" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_adp" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_hex_metabolite_adp_molecule_g6p" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_hex </ci>
+              <ci> molecule_g6p </ci>
+              <ci> metabolite_adp </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r5" name="r5" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pgi" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_g6p" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pgi_molecule_g6p" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pgi </ci>
+              <ci> molecule_g6p </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r5_1" name="r5_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pgi_molecule_g6p" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pgi" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_g6p" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pgi_molecule_g6p </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r7" name="r7" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pgi_molecule_g6p" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pgi_molecule_f6p" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pgi_molecule_g6p </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r8" name="r8" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pgi_molecule_f6p" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pgi" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_f6p" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pgi_molecule_f6p </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r8_1" name="r8_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pgi" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_f6p" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pgi_molecule_f6p" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pgi </ci>
+              <ci> molecule_f6p </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r10" name="r10" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pfk" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_atp" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_f6p" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pfk_metabolite_atp_molecule_f6p" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pfk </ci>
+              <ci> metabolite_atp </ci>
+              <ci> molecule_f6p </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r10_1" name="r10_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pfk_metabolite_atp_molecule_f6p" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pfk" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_atp" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_f6p" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pfk_metabolite_atp_molecule_f6p </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r12" name="r12" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pfk_metabolite_atp_molecule_f6p" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pfk_metabolite_adp_molecule_f16p" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pfk_metabolite_atp_molecule_f6p </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r13" name="r13" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pfk_metabolite_adp_molecule_f16p" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pfk" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_f16p" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_adp" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pfk_metabolite_adp_molecule_f16p </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r13_1" name="r13_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pfk" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_f16p" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_adp" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pfk_metabolite_adp_molecule_f16p" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pfk </ci>
+              <ci> molecule_f16p </ci>
+              <ci> metabolite_adp </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r15" name="r15" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_ald_tpi" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_f16p" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_ald_tpi_molecule_f16p" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_ald_tpi </ci>
+              <ci> molecule_f16p </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r15_1" name="r15_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_ald_tpi_molecule_f16p" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_ald_tpi" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_f16p" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_ald_tpi_molecule_f16p </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r17" name="r17" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_ald_tpi_molecule_f16p" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_ald_tpi_2x_molecule_g3p" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_ald_tpi_molecule_f16p </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r18" name="r18" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_ald_tpi_2x_molecule_g3p" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_ald_tpi" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_g3p" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_ald_tpi_2x_molecule_g3p </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r18_1" name="r18_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_ald_tpi" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_g3p" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_ald_tpi_2x_molecule_g3p" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_ald_tpi </ci>
+              <apply>
+                <power/>
+                <ci> molecule_g3p </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r20" name="r20" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_gapN" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadp" stoichiometry="2" constant="false"/>
+          <speciesReference species="molecule_g3p" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_gapN </ci>
+              <apply>
+                <power/>
+                <ci> metabolite_nadp </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+              <apply>
+                <power/>
+                <ci> molecule_g3p </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r20_1" name="r20_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_gapN" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadp" stoichiometry="2" constant="false"/>
+          <speciesReference species="molecule_g3p" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r22" name="r22" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_gapN_2x_metabolite_nadph_2x_molecule_3pg" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r23" name="r23" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_gapN_2x_metabolite_nadph_2x_molecule_3pg" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_gapN" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3pg" stoichiometry="2" constant="false"/>
+          <speciesReference species="metabolite_nadph" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_gapN_2x_metabolite_nadph_2x_molecule_3pg </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r23_1" name="r23_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_gapN" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3pg" stoichiometry="2" constant="false"/>
+          <speciesReference species="metabolite_nadph" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_gapN_2x_metabolite_nadph_2x_molecule_3pg" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_gapN </ci>
+              <apply>
+                <power/>
+                <ci> molecule_3pg </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+              <apply>
+                <power/>
+                <ci> metabolite_nadph </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r25" name="r25" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_mGapDH" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_pi" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadp" stoichiometry="2" constant="false"/>
+          <speciesReference species="molecule_g3p" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_mGapDH </ci>
+              <ci> metabolite_pi </ci>
+              <apply>
+                <power/>
+                <ci> metabolite_nadp </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+              <apply>
+                <power/>
+                <ci> molecule_g3p </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r25_1" name="r25_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_mGapDH" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_pi" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadp" stoichiometry="2" constant="false"/>
+          <speciesReference species="molecule_g3p" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r27" name="r27" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_mGapDH_2x_metabolite_nadph_molecule_13bpg" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r28" name="r28" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_mGapDH_2x_metabolite_nadph_molecule_13bpg" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_mGapDH" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_13bpg" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadph" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_mGapDH_2x_metabolite_nadph_molecule_13bpg </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r28_1" name="r28_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_mGapDH" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_13bpg" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadph" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_mGapDH_2x_metabolite_nadph_molecule_13bpg" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_mGapDH </ci>
+              <ci> molecule_13bpg </ci>
+              <apply>
+                <power/>
+                <ci> metabolite_nadph </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r30" name="r30" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pgk" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_adp" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_13bpg" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pgk_metabolite_adp_molecule_13bpg" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pgk </ci>
+              <ci> metabolite_adp </ci>
+              <ci> molecule_13bpg </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r30_1" name="r30_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pgk_metabolite_adp_molecule_13bpg" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pgk" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_adp" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_13bpg" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pgk_metabolite_adp_molecule_13bpg </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r32" name="r32" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pgk_metabolite_adp_molecule_13bpg" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pgk_metabolite_adp_molecule_13bpg </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r33" name="r33" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pgk" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3pg" stoichiometry="2" constant="false"/>
+          <speciesReference species="metabolite_atp" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r33_1" name="r33_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pgk" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3pg" stoichiometry="2" constant="false"/>
+          <speciesReference species="metabolite_atp" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pgk </ci>
+              <apply>
+                <power/>
+                <ci> molecule_3pg </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+              <ci> metabolite_atp </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r35" name="r35" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pgm" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3pg" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pgm_2x_molecule_3pg" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pgm </ci>
+              <apply>
+                <power/>
+                <ci> molecule_3pg </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r35_1" name="r35_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pgm_2x_molecule_3pg" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pgm" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3pg" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pgm_2x_molecule_3pg </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r37" name="r37" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pgm_2x_molecule_3pg" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pgm_2x_molecule_2pg" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pgm_2x_molecule_3pg </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r38" name="r38" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pgm_2x_molecule_2pg" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pgm" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_2pg" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pgm_2x_molecule_2pg </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r38_1" name="r38_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pgm" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_2pg" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pgm_2x_molecule_2pg" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pgm </ci>
+              <apply>
+                <power/>
+                <ci> molecule_2pg </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r40" name="r40" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_eno" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_2pg" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_eno_2x_molecule_2pg" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_eno </ci>
+              <apply>
+                <power/>
+                <ci> molecule_2pg </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r40_1" name="r40_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_eno_2x_molecule_2pg" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_eno" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_2pg" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_eno_2x_molecule_2pg </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r42" name="r42" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_eno_2x_molecule_2pg" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_eno_2x_molecule_pep" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_eno_2x_molecule_2pg </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r43" name="r43" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_eno_2x_molecule_pep" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_eno" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_pep" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_eno_2x_molecule_pep </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r43_1" name="r43_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_eno" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_pep" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_eno_2x_molecule_pep" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_eno </ci>
+              <apply>
+                <power/>
+                <ci> molecule_pep </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r45" name="r45" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pyk" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_adp" stoichiometry="2" constant="false"/>
+          <speciesReference species="molecule_pep" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pyk </ci>
+              <apply>
+                <power/>
+                <ci> metabolite_adp </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+              <apply>
+                <power/>
+                <ci> molecule_pep </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r45_1" name="r45_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pyk" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_adp" stoichiometry="2" constant="false"/>
+          <speciesReference species="molecule_pep" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r47" name="r47" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r48" name="r48" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pyk" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_pyruvate" stoichiometry="2" constant="false"/>
+          <speciesReference species="metabolite_atp" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r48_1" name="r48_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pyk" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_pyruvate" stoichiometry="2" constant="false"/>
+          <speciesReference species="metabolite_atp" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pyk </ci>
+              <apply>
+                <power/>
+                <ci> molecule_pyruvate </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+              <apply>
+                <power/>
+                <ci> metabolite_atp </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r50" name="r50" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_alsS" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_pyruvate" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_alsS_2x_molecule_pyruvate" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_alsS </ci>
+              <apply>
+                <power/>
+                <ci> molecule_pyruvate </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r50_1" name="r50_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_alsS_2x_molecule_pyruvate" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_alsS" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_pyruvate" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_alsS_2x_molecule_pyruvate </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r52" name="r52" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_alsS_2x_molecule_pyruvate" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_alsS_molecule_acetolac" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_alsS_2x_molecule_pyruvate </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r53" name="r53" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_alsS_molecule_acetolac" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_alsS" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_acetolac" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_alsS_molecule_acetolac </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r53_1" name="r53_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_alsS" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_acetolac" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_alsS_molecule_acetolac" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_alsS </ci>
+              <ci> molecule_acetolac </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r55" name="r55" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_IlvC" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadph" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_acetolac" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_IlvC_metabolite_nadph_molecule_acetolac" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_IlvC </ci>
+              <ci> metabolite_nadph </ci>
+              <ci> molecule_acetolac </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r55_1" name="r55_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_IlvC_metabolite_nadph_molecule_acetolac" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_IlvC" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadph" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_acetolac" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_IlvC_metabolite_nadph_molecule_acetolac </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r57" name="r57" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_IlvC_metabolite_nadph_molecule_acetolac" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_IlvC_metabolite_nadp_molecule_23dih3mebut" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_IlvC_metabolite_nadph_molecule_acetolac </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r58" name="r58" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_IlvC_metabolite_nadp_molecule_23dih3mebut" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_IlvC" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_23dih3mebut" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadp" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_IlvC_metabolite_nadp_molecule_23dih3mebut </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r58_1" name="r58_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_IlvC" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_23dih3mebut" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadp" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_IlvC_metabolite_nadp_molecule_23dih3mebut" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_IlvC </ci>
+              <ci> molecule_23dih3mebut </ci>
+              <ci> metabolite_nadp </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r60" name="r60" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_IlvD" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_23dih3mebut" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_IlvD_molecule_23dih3mebut" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_IlvD </ci>
+              <ci> molecule_23dih3mebut </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r60_1" name="r60_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_IlvD_molecule_23dih3mebut" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_IlvD" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_23dih3mebut" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_IlvD_molecule_23dih3mebut </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r62" name="r62" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_IlvD_molecule_23dih3mebut" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_IlvD_molecule_3me2oxo" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_IlvD_molecule_23dih3mebut </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r63" name="r63" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_IlvD_molecule_3me2oxo" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_IlvD" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3me2oxo" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_IlvD_molecule_3me2oxo </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r63_1" name="r63_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_IlvD" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3me2oxo" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_IlvD_molecule_3me2oxo" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_IlvD </ci>
+              <ci> molecule_3me2oxo </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r65" name="r65" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_kivD" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3me2oxo" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_kivD_molecule_3me2oxo" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_kivD </ci>
+              <ci> molecule_3me2oxo </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r65_1" name="r65_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_kivD_molecule_3me2oxo" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_kivD" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3me2oxo" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_kivD_molecule_3me2oxo </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r67" name="r67" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_kivD_molecule_3me2oxo" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_kivD_molecule_isobutanal" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_kivD_molecule_3me2oxo </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r68" name="r68" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_kivD_molecule_isobutanal" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_kivD" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_isobutanal" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_kivD_molecule_isobutanal </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r68_1" name="r68_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_kivD" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_isobutanal" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_kivD_molecule_isobutanal" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_kivD </ci>
+              <ci> molecule_isobutanal </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r70" name="r70" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_yahk" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadph" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_isobutanal" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_yahk </ci>
+              <ci> metabolite_nadph </ci>
+              <ci> molecule_isobutanal </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r70_1" name="r70_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_yahk" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadph" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_isobutanal" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r72" name="r72" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_yahk_metabolite_nadp_molecule_isobutanol" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r73" name="r73" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_yahk_metabolite_nadp_molecule_isobutanol" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_yahk" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_isobutanol" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadp" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_yahk_metabolite_nadp_molecule_isobutanol </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r73_1" name="r73_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_yahk" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_isobutanol" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadp" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_yahk_metabolite_nadp_molecule_isobutanol" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_yahk </ci>
+              <ci> molecule_isobutanol </ci>
+              <ci> metabolite_nadp </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r75" name="r75" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_atp_use" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_atp" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_atp_use_metabolite_atp" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_atp_use </ci>
+              <ci> metabolite_atp </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r75_1" name="r75_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_atp_use_metabolite_atp" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_atp_use" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_atp" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_atp_use_metabolite_atp </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r77" name="r77" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=2</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_atp_use_metabolite_atp" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_atp_use_metabolite_adp_metabolite_pi" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_atp_use_metabolite_atp </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="2"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r78" name="r78" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=54000</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_atp_use_metabolite_adp_metabolite_pi" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_atp_use" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_adp" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_pi" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_atp_use_metabolite_adp_metabolite_pi </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="54000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r78_1" name="r78_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5400.0</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_atp_use" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_adp" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_pi" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_atp_use_metabolite_adp_metabolite_pi" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_atp_use </ci>
+              <ci> metabolite_adp </ci>
+              <ci> metabolite_pi </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5400"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

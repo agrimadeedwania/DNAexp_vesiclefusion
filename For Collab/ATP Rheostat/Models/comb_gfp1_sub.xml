@@ -1,0 +1,2166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
+  <model id="combined_model_of__biocrnpyler_798952_biocrnpyler_317929" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
+    <listOfUnitDefinitions>
+      <unitDefinition id="square_metre">
+        <listOfUnits>
+          <unit kind="metre" exponent="2" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment id="default_gfpbiocrnpyler_798952_combined" name="default" spatialDimensions="3" size="2e-06" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="dna_h_gfpbiocrnpyler_798952" name="dna_h" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="rna_h_gfpbiocrnpyler_798952" name="rna_h" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="exsA_gfpbiocrnpyler_798952" name="exsA" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_dna_h_exsA_gfpbiocrnpyler_798952" name="complex_dna_h_exsA" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="gfp_gfpbiocrnpyler_798952" name="gfp" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_hex_ATP_rheostatbiocrnpyler_317929" name="enzyme_hex" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ATP_gfpbiocrnpyler_798952_1_combined" name="ATP" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_glucose_ATP_rheostatbiocrnpyler_317929" name="molecule_glucose" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_g6p_ATP_rheostatbiocrnpyler_317929" name="molecule_g6p" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ADP_gfpbiocrnpyler_798952_1_combined" name="ADP" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_hex_metabolite_atp_molecule_glucose_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_hex_metabolite_atp_molecule_glucose" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_hex_metabolite_adp_molecule_g6p_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_hex_metabolite_adp_molecule_g6p" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_pgi_ATP_rheostatbiocrnpyler_317929" name="enzyme_pgi" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_f6p_ATP_rheostatbiocrnpyler_317929" name="molecule_f6p" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pgi_molecule_g6p_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_pgi_molecule_g6p" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pgi_molecule_f6p_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_pgi_molecule_f6p" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_pfk_ATP_rheostatbiocrnpyler_317929" name="enzyme_pfk" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_f16p_ATP_rheostatbiocrnpyler_317929" name="molecule_f16p" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pfk_metabolite_atp_molecule_f6p_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_pfk_metabolite_atp_molecule_f6p" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pfk_metabolite_adp_molecule_f16p_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_pfk_metabolite_adp_molecule_f16p" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_ald_tpi_ATP_rheostatbiocrnpyler_317929" name="enzyme_ald_tpi" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_g3p_ATP_rheostatbiocrnpyler_317929" name="molecule_g3p" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_ald_tpi_molecule_f16p_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_ald_tpi_molecule_f16p" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_ald_tpi_2x_molecule_g3p_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_ald_tpi_2x_molecule_g3p" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_gapN_ATP_rheostatbiocrnpyler_317929" name="enzyme_gapN" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="metabolite_nadp_ATP_rheostatbiocrnpyler_317929" name="metabolite_nadp" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_3pg_ATP_rheostatbiocrnpyler_317929" name="molecule_3pg" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="metabolite_nadph_ATP_rheostatbiocrnpyler_317929" name="metabolite_nadph" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_gapN_2x_metabolite_nadph_2x_molecule_3pg_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_gapN_2x_metabolite_nadph_2x_molecule_3pg" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_mGapDH_ATP_rheostatbiocrnpyler_317929" name="enzyme_mGapDH" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="P_gfpbiocrnpyler_798952_1_combined" name="P" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_13bpg_ATP_rheostatbiocrnpyler_317929" name="molecule_13bpg" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_mGapDH_2x_metabolite_nadph_molecule_13bpg_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_mGapDH_2x_metabolite_nadph_molecule_13bpg" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_pgk_ATP_rheostatbiocrnpyler_317929" name="enzyme_pgk" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pgk_metabolite_adp_molecule_13bpg_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_pgk_metabolite_adp_molecule_13bpg" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_pgm_ATP_rheostatbiocrnpyler_317929" name="enzyme_pgm" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_2pg_ATP_rheostatbiocrnpyler_317929" name="molecule_2pg" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pgm_2x_molecule_3pg_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_pgm_2x_molecule_3pg" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pgm_2x_molecule_2pg_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_pgm_2x_molecule_2pg" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_eno_ATP_rheostatbiocrnpyler_317929" name="enzyme_eno" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_pep_ATP_rheostatbiocrnpyler_317929" name="molecule_pep" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_eno_2x_molecule_2pg_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_eno_2x_molecule_2pg" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_eno_2x_molecule_pep_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_eno_2x_molecule_pep" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_pyk_ATP_rheostatbiocrnpyler_317929" name="enzyme_pyk" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_pyruvate_ATP_rheostatbiocrnpyler_317929" name="molecule_pyruvate" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_alsS_ATP_rheostatbiocrnpyler_317929" name="enzyme_alsS" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_acetolac_ATP_rheostatbiocrnpyler_317929" name="molecule_acetolac" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_alsS_2x_molecule_pyruvate_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_alsS_2x_molecule_pyruvate" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_alsS_molecule_acetolac_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_alsS_molecule_acetolac" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_IlvC_ATP_rheostatbiocrnpyler_317929" name="enzyme_IlvC" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_23dih3mebut_ATP_rheostatbiocrnpyler_317929" name="molecule_23dih3mebut" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_IlvC_metabolite_nadph_molecule_acetolac_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_IlvC_metabolite_nadph_molecule_acetolac" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_IlvC_metabolite_nadp_molecule_23dih3mebut_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_IlvC_metabolite_nadp_molecule_23dih3mebut" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_IlvD_ATP_rheostatbiocrnpyler_317929" name="enzyme_IlvD" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_3me2oxo_ATP_rheostatbiocrnpyler_317929" name="molecule_3me2oxo" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_IlvD_molecule_23dih3mebut_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_IlvD_molecule_23dih3mebut" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_IlvD_molecule_3me2oxo_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_IlvD_molecule_3me2oxo" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_kivD_ATP_rheostatbiocrnpyler_317929" name="enzyme_kivD" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_isobutanal_ATP_rheostatbiocrnpyler_317929" name="molecule_isobutanal" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_kivD_molecule_3me2oxo_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_kivD_molecule_3me2oxo" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_kivD_molecule_isobutanal_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_kivD_molecule_isobutanal" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_yahk_ATP_rheostatbiocrnpyler_317929" name="enzyme_yahk" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_isobutanol_ATP_rheostatbiocrnpyler_317929" name="molecule_isobutanol" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_yahk_metabolite_nadp_molecule_isobutanol_ATP_rheostatbiocrnpyler_317929" name="complex_enzyme_yahk_metabolite_nadp_molecule_isobutanol" compartment="default_gfpbiocrnpyler_798952_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="r0_gfpbiocrnpyler_798952" name="r0" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=4e-05  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="dna_h_gfpbiocrnpyler_798952" stoichiometry="1" constant="false"/>
+          <speciesReference species="exsA_gfpbiocrnpyler_798952" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_dna_h_exsA_gfpbiocrnpyler_798952" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> dna_h_gfpbiocrnpyler_798952 </ci>
+              <ci> exsA_gfpbiocrnpyler_798952 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="4e-05"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r0_1_gfpbiocrnpyler_798952" name="r0_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=1e-12  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_dna_h_exsA_gfpbiocrnpyler_798952" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="dna_h_gfpbiocrnpyler_798952" stoichiometry="1" constant="false"/>
+          <speciesReference species="exsA_gfpbiocrnpyler_798952" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_dna_h_exsA_gfpbiocrnpyler_798952 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="1e-12"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r2_gfpbiocrnpyler_798952" name="r2" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.001875  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_dna_h_exsA_gfpbiocrnpyler_798952" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_dna_h_exsA_gfpbiocrnpyler_798952" stoichiometry="1" constant="false"/>
+          <speciesReference species="rna_h_gfpbiocrnpyler_798952" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_dna_h_exsA_gfpbiocrnpyler_798952 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.001875"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r3_gfpbiocrnpyler_798952" name="r3" reversible="false">
+        <annotation>
+          <PropensityType> type=proportionalhillpositive k=0.0005 K=1 n=1 s1=ATP_gfpbiocrnpyler_798952_1_combined d=rna_h_gfpbiocrnpyler_798952  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="rna_h_gfpbiocrnpyler_798952" stoichiometry="1" constant="false"/>
+          <speciesReference species="ATP_gfpbiocrnpyler_798952_1_combined" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rna_h_gfpbiocrnpyler_798952" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_gfpbiocrnpyler_798952_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="gfp_gfpbiocrnpyler_798952" stoichiometry="1" constant="false"/>
+          <speciesReference species="P_gfpbiocrnpyler_798952_1_combined" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k </ci>
+                <ci> rna_h_gfpbiocrnpyler_798952 </ci>
+                <apply>
+                  <power/>
+                  <ci> ATP_gfpbiocrnpyler_798952_1_combined </ci>
+                  <ci> n </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <power/>
+                  <ci> ATP_gfpbiocrnpyler_798952_1_combined </ci>
+                  <ci> n </ci>
+                </apply>
+                <ci> K </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.0005"/>
+            <localParameter id="n" value="1"/>
+            <localParameter id="K" value="1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r4_gfpbiocrnpyler_798952" name="r4" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.001  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="rna_h_gfpbiocrnpyler_798952" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> rna_h_gfpbiocrnpyler_798952 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.001"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r0_ATP_rheostatbiocrnpyler_317929" name="r0" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_hex_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="ATP_gfpbiocrnpyler_798952_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_glucose_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_hex_metabolite_atp_molecule_glucose_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_hex_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> ATP_gfpbiocrnpyler_798952_1_combined </ci>
+              <ci> molecule_glucose_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r0_1_ATP_rheostatbiocrnpyler_317929" name="r0_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_hex_metabolite_atp_molecule_glucose_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_hex_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="ATP_gfpbiocrnpyler_798952_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_glucose_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_hex_metabolite_atp_molecule_glucose_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r2_ATP_rheostatbiocrnpyler_317929" name="r2" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_hex_metabolite_atp_molecule_glucose_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_hex_metabolite_adp_molecule_g6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_hex_metabolite_atp_molecule_glucose_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r3_ATP_rheostatbiocrnpyler_317929" name="r3" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_hex_metabolite_adp_molecule_g6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_hex_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_g6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_gfpbiocrnpyler_798952_1_combined" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_hex_metabolite_adp_molecule_g6p_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r3_1_ATP_rheostatbiocrnpyler_317929" name="r3_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_hex_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_g6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_gfpbiocrnpyler_798952_1_combined" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_hex_metabolite_adp_molecule_g6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_hex_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> molecule_g6p_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> ADP_gfpbiocrnpyler_798952_1_combined </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r5_ATP_rheostatbiocrnpyler_317929" name="r5" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pgi_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_g6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pgi_molecule_g6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pgi_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> molecule_g6p_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r5_1_ATP_rheostatbiocrnpyler_317929" name="r5_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pgi_molecule_g6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pgi_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_g6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pgi_molecule_g6p_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r7_ATP_rheostatbiocrnpyler_317929" name="r7" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pgi_molecule_g6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pgi_molecule_f6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pgi_molecule_g6p_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r8_ATP_rheostatbiocrnpyler_317929" name="r8" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pgi_molecule_f6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pgi_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_f6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pgi_molecule_f6p_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r8_1_ATP_rheostatbiocrnpyler_317929" name="r8_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pgi_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_f6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pgi_molecule_f6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pgi_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> molecule_f6p_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r10_ATP_rheostatbiocrnpyler_317929" name="r10" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pfk_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="ATP_gfpbiocrnpyler_798952_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_f6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pfk_metabolite_atp_molecule_f6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pfk_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> ATP_gfpbiocrnpyler_798952_1_combined </ci>
+              <ci> molecule_f6p_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r10_1_ATP_rheostatbiocrnpyler_317929" name="r10_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pfk_metabolite_atp_molecule_f6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pfk_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="ATP_gfpbiocrnpyler_798952_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_f6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pfk_metabolite_atp_molecule_f6p_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r12_ATP_rheostatbiocrnpyler_317929" name="r12" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pfk_metabolite_atp_molecule_f6p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pfk_metabolite_adp_molecule_f16p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pfk_metabolite_atp_molecule_f6p_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r13_ATP_rheostatbiocrnpyler_317929" name="r13" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pfk_metabolite_adp_molecule_f16p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pfk_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_f16p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_gfpbiocrnpyler_798952_1_combined" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pfk_metabolite_adp_molecule_f16p_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r13_1_ATP_rheostatbiocrnpyler_317929" name="r13_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pfk_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_f16p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_gfpbiocrnpyler_798952_1_combined" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pfk_metabolite_adp_molecule_f16p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pfk_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> molecule_f16p_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> ADP_gfpbiocrnpyler_798952_1_combined </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r15_ATP_rheostatbiocrnpyler_317929" name="r15" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_ald_tpi_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_f16p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_ald_tpi_molecule_f16p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_ald_tpi_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> molecule_f16p_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r15_1_ATP_rheostatbiocrnpyler_317929" name="r15_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_ald_tpi_molecule_f16p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_ald_tpi_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_f16p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_ald_tpi_molecule_f16p_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r17_ATP_rheostatbiocrnpyler_317929" name="r17" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_ald_tpi_molecule_f16p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_ald_tpi_2x_molecule_g3p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_ald_tpi_molecule_f16p_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r18_ATP_rheostatbiocrnpyler_317929" name="r18" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_ald_tpi_2x_molecule_g3p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_ald_tpi_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_g3p_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_ald_tpi_2x_molecule_g3p_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r18_1_ATP_rheostatbiocrnpyler_317929" name="r18_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_ald_tpi_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_g3p_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_ald_tpi_2x_molecule_g3p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_ald_tpi_ATP_rheostatbiocrnpyler_317929 </ci>
+              <apply>
+                <power/>
+                <ci> molecule_g3p_ATP_rheostatbiocrnpyler_317929 </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r20_ATP_rheostatbiocrnpyler_317929" name="r20" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_gapN_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadp_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+          <speciesReference species="molecule_g3p_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_gapN_ATP_rheostatbiocrnpyler_317929 </ci>
+              <apply>
+                <power/>
+                <ci> metabolite_nadp_ATP_rheostatbiocrnpyler_317929 </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+              <apply>
+                <power/>
+                <ci> molecule_g3p_ATP_rheostatbiocrnpyler_317929 </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r20_1_ATP_rheostatbiocrnpyler_317929" name="r20_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_gapN_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadp_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+          <speciesReference species="molecule_g3p_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r22_ATP_rheostatbiocrnpyler_317929" name="r22" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_gapN_2x_metabolite_nadph_2x_molecule_3pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r23_ATP_rheostatbiocrnpyler_317929" name="r23" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_gapN_2x_metabolite_nadph_2x_molecule_3pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_gapN_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+          <speciesReference species="metabolite_nadph_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_gapN_2x_metabolite_nadph_2x_molecule_3pg_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r23_1_ATP_rheostatbiocrnpyler_317929" name="r23_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_gapN_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+          <speciesReference species="metabolite_nadph_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_gapN_2x_metabolite_nadph_2x_molecule_3pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_gapN_ATP_rheostatbiocrnpyler_317929 </ci>
+              <apply>
+                <power/>
+                <ci> molecule_3pg_ATP_rheostatbiocrnpyler_317929 </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+              <apply>
+                <power/>
+                <ci> metabolite_nadph_ATP_rheostatbiocrnpyler_317929 </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r25_ATP_rheostatbiocrnpyler_317929" name="r25" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_mGapDH_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="P_gfpbiocrnpyler_798952_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadp_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+          <speciesReference species="molecule_g3p_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_mGapDH_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> P_gfpbiocrnpyler_798952_1_combined </ci>
+              <apply>
+                <power/>
+                <ci> metabolite_nadp_ATP_rheostatbiocrnpyler_317929 </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+              <apply>
+                <power/>
+                <ci> molecule_g3p_ATP_rheostatbiocrnpyler_317929 </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r25_1_ATP_rheostatbiocrnpyler_317929" name="r25_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_mGapDH_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="P_gfpbiocrnpyler_798952_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadp_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+          <speciesReference species="molecule_g3p_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r27_ATP_rheostatbiocrnpyler_317929" name="r27" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_mGapDH_2x_metabolite_nadph_molecule_13bpg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r28_ATP_rheostatbiocrnpyler_317929" name="r28" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_mGapDH_2x_metabolite_nadph_molecule_13bpg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_mGapDH_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_13bpg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadph_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_mGapDH_2x_metabolite_nadph_molecule_13bpg_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r28_1_ATP_rheostatbiocrnpyler_317929" name="r28_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_mGapDH_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_13bpg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadph_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_mGapDH_2x_metabolite_nadph_molecule_13bpg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_mGapDH_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> molecule_13bpg_ATP_rheostatbiocrnpyler_317929 </ci>
+              <apply>
+                <power/>
+                <ci> metabolite_nadph_ATP_rheostatbiocrnpyler_317929 </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r30_ATP_rheostatbiocrnpyler_317929" name="r30" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pgk_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_gfpbiocrnpyler_798952_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_13bpg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pgk_metabolite_adp_molecule_13bpg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pgk_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> ADP_gfpbiocrnpyler_798952_1_combined </ci>
+              <ci> molecule_13bpg_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r30_1_ATP_rheostatbiocrnpyler_317929" name="r30_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pgk_metabolite_adp_molecule_13bpg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pgk_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_gfpbiocrnpyler_798952_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_13bpg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pgk_metabolite_adp_molecule_13bpg_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r32_ATP_rheostatbiocrnpyler_317929" name="r32" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pgk_metabolite_adp_molecule_13bpg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pgk_metabolite_adp_molecule_13bpg_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r33_ATP_rheostatbiocrnpyler_317929" name="r33" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pgk_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+          <speciesReference species="ATP_gfpbiocrnpyler_798952_1_combined" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r33_1_ATP_rheostatbiocrnpyler_317929" name="r33_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pgk_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+          <speciesReference species="ATP_gfpbiocrnpyler_798952_1_combined" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pgk_ATP_rheostatbiocrnpyler_317929 </ci>
+              <apply>
+                <power/>
+                <ci> molecule_3pg_ATP_rheostatbiocrnpyler_317929 </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+              <ci> ATP_gfpbiocrnpyler_798952_1_combined </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r35_ATP_rheostatbiocrnpyler_317929" name="r35" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pgm_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pgm_2x_molecule_3pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pgm_ATP_rheostatbiocrnpyler_317929 </ci>
+              <apply>
+                <power/>
+                <ci> molecule_3pg_ATP_rheostatbiocrnpyler_317929 </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r35_1_ATP_rheostatbiocrnpyler_317929" name="r35_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pgm_2x_molecule_3pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pgm_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pgm_2x_molecule_3pg_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r37_ATP_rheostatbiocrnpyler_317929" name="r37" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pgm_2x_molecule_3pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pgm_2x_molecule_2pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pgm_2x_molecule_3pg_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r38_ATP_rheostatbiocrnpyler_317929" name="r38" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pgm_2x_molecule_2pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pgm_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_2pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pgm_2x_molecule_2pg_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r38_1_ATP_rheostatbiocrnpyler_317929" name="r38_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pgm_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_2pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pgm_2x_molecule_2pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pgm_ATP_rheostatbiocrnpyler_317929 </ci>
+              <apply>
+                <power/>
+                <ci> molecule_2pg_ATP_rheostatbiocrnpyler_317929 </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r40_ATP_rheostatbiocrnpyler_317929" name="r40" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_eno_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_2pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_eno_2x_molecule_2pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_eno_ATP_rheostatbiocrnpyler_317929 </ci>
+              <apply>
+                <power/>
+                <ci> molecule_2pg_ATP_rheostatbiocrnpyler_317929 </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r40_1_ATP_rheostatbiocrnpyler_317929" name="r40_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_eno_2x_molecule_2pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_eno_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_2pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_eno_2x_molecule_2pg_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r42_ATP_rheostatbiocrnpyler_317929" name="r42" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_eno_2x_molecule_2pg_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_eno_2x_molecule_pep_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_eno_2x_molecule_2pg_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r43_ATP_rheostatbiocrnpyler_317929" name="r43" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_eno_2x_molecule_pep_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_eno_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_pep_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_eno_2x_molecule_pep_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r43_1_ATP_rheostatbiocrnpyler_317929" name="r43_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_eno_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_pep_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_eno_2x_molecule_pep_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_eno_ATP_rheostatbiocrnpyler_317929 </ci>
+              <apply>
+                <power/>
+                <ci> molecule_pep_ATP_rheostatbiocrnpyler_317929 </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r45_ATP_rheostatbiocrnpyler_317929" name="r45" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pyk_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_gfpbiocrnpyler_798952_1_combined" stoichiometry="2" constant="false"/>
+          <speciesReference species="molecule_pep_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pyk_ATP_rheostatbiocrnpyler_317929 </ci>
+              <apply>
+                <power/>
+                <ci> ADP_gfpbiocrnpyler_798952_1_combined </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+              <apply>
+                <power/>
+                <ci> molecule_pep_ATP_rheostatbiocrnpyler_317929 </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r45_1_ATP_rheostatbiocrnpyler_317929" name="r45_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pyk_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_gfpbiocrnpyler_798952_1_combined" stoichiometry="2" constant="false"/>
+          <speciesReference species="molecule_pep_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r47_ATP_rheostatbiocrnpyler_317929" name="r47" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r48_ATP_rheostatbiocrnpyler_317929" name="r48" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_pyk_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_pyruvate_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+          <speciesReference species="ATP_gfpbiocrnpyler_798952_1_combined" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r48_1_ATP_rheostatbiocrnpyler_317929" name="r48_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_pyk_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_pyruvate_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+          <speciesReference species="ATP_gfpbiocrnpyler_798952_1_combined" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_pyk_ATP_rheostatbiocrnpyler_317929 </ci>
+              <apply>
+                <power/>
+                <ci> molecule_pyruvate_ATP_rheostatbiocrnpyler_317929 </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+              <apply>
+                <power/>
+                <ci> ATP_gfpbiocrnpyler_798952_1_combined </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r50_ATP_rheostatbiocrnpyler_317929" name="r50" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_alsS_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_pyruvate_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_alsS_2x_molecule_pyruvate_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_alsS_ATP_rheostatbiocrnpyler_317929 </ci>
+              <apply>
+                <power/>
+                <ci> molecule_pyruvate_ATP_rheostatbiocrnpyler_317929 </ci>
+                <cn type="integer"> 2 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r50_1_ATP_rheostatbiocrnpyler_317929" name="r50_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_alsS_2x_molecule_pyruvate_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_alsS_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_pyruvate_ATP_rheostatbiocrnpyler_317929" stoichiometry="2" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_alsS_2x_molecule_pyruvate_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r52_ATP_rheostatbiocrnpyler_317929" name="r52" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_alsS_2x_molecule_pyruvate_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_alsS_molecule_acetolac_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_alsS_2x_molecule_pyruvate_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r53_ATP_rheostatbiocrnpyler_317929" name="r53" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_alsS_molecule_acetolac_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_alsS_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_acetolac_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_alsS_molecule_acetolac_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r53_1_ATP_rheostatbiocrnpyler_317929" name="r53_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_alsS_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_acetolac_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_alsS_molecule_acetolac_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_alsS_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> molecule_acetolac_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r55_ATP_rheostatbiocrnpyler_317929" name="r55" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_IlvC_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadph_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_acetolac_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_IlvC_metabolite_nadph_molecule_acetolac_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_IlvC_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> metabolite_nadph_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> molecule_acetolac_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r55_1_ATP_rheostatbiocrnpyler_317929" name="r55_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_IlvC_metabolite_nadph_molecule_acetolac_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_IlvC_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadph_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_acetolac_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_IlvC_metabolite_nadph_molecule_acetolac_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r57_ATP_rheostatbiocrnpyler_317929" name="r57" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_IlvC_metabolite_nadph_molecule_acetolac_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_IlvC_metabolite_nadp_molecule_23dih3mebut_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_IlvC_metabolite_nadph_molecule_acetolac_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r58_ATP_rheostatbiocrnpyler_317929" name="r58" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_IlvC_metabolite_nadp_molecule_23dih3mebut_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_IlvC_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_23dih3mebut_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadp_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_IlvC_metabolite_nadp_molecule_23dih3mebut_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r58_1_ATP_rheostatbiocrnpyler_317929" name="r58_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_IlvC_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_23dih3mebut_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadp_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_IlvC_metabolite_nadp_molecule_23dih3mebut_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_IlvC_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> molecule_23dih3mebut_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> metabolite_nadp_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r60_ATP_rheostatbiocrnpyler_317929" name="r60" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_IlvD_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_23dih3mebut_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_IlvD_molecule_23dih3mebut_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_IlvD_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> molecule_23dih3mebut_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r60_1_ATP_rheostatbiocrnpyler_317929" name="r60_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_IlvD_molecule_23dih3mebut_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_IlvD_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_23dih3mebut_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_IlvD_molecule_23dih3mebut_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r62_ATP_rheostatbiocrnpyler_317929" name="r62" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_IlvD_molecule_23dih3mebut_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_IlvD_molecule_3me2oxo_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_IlvD_molecule_23dih3mebut_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r63_ATP_rheostatbiocrnpyler_317929" name="r63" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_IlvD_molecule_3me2oxo_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_IlvD_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3me2oxo_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_IlvD_molecule_3me2oxo_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r63_1_ATP_rheostatbiocrnpyler_317929" name="r63_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_IlvD_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3me2oxo_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_IlvD_molecule_3me2oxo_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_IlvD_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> molecule_3me2oxo_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r65_ATP_rheostatbiocrnpyler_317929" name="r65" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_kivD_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3me2oxo_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_kivD_molecule_3me2oxo_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_kivD_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> molecule_3me2oxo_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r65_1_ATP_rheostatbiocrnpyler_317929" name="r65_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_kivD_molecule_3me2oxo_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_kivD_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_3me2oxo_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_kivD_molecule_3me2oxo_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r67_ATP_rheostatbiocrnpyler_317929" name="r67" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_kivD_molecule_3me2oxo_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_kivD_molecule_isobutanal_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_kivD_molecule_3me2oxo_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r68_ATP_rheostatbiocrnpyler_317929" name="r68" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_kivD_molecule_isobutanal_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_kivD_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_isobutanal_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_kivD_molecule_isobutanal_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r68_1_ATP_rheostatbiocrnpyler_317929" name="r68_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_kivD_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_isobutanal_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_kivD_molecule_isobutanal_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_kivD_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> molecule_isobutanal_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r70_ATP_rheostatbiocrnpyler_317929" name="r70" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_yahk_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadph_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_isobutanal_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_yahk_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> metabolite_nadph_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> molecule_isobutanal_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r70_1_ATP_rheostatbiocrnpyler_317929" name="r70_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_yahk_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadph_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_isobutanal_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r72_ATP_rheostatbiocrnpyler_317929" name="r72" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=36000  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_yahk_metabolite_nadp_molecule_isobutanol_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="36000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r73_ATP_rheostatbiocrnpyler_317929" name="r73" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.03  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_enzyme_yahk_metabolite_nadp_molecule_isobutanol_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="enzyme_yahk_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_isobutanol_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadp_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_enzyme_yahk_metabolite_nadp_molecule_isobutanol_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.03"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r73_1_ATP_rheostatbiocrnpyler_317929" name="r73_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.003  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="enzyme_yahk_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="molecule_isobutanol_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_nadp_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_enzyme_yahk_metabolite_nadp_molecule_isobutanol_ATP_rheostatbiocrnpyler_317929" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> enzyme_yahk_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> molecule_isobutanol_ATP_rheostatbiocrnpyler_317929 </ci>
+              <ci> metabolite_nadp_ATP_rheostatbiocrnpyler_317929 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
