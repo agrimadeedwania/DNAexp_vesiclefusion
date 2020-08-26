@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
-  <model id="biocrnpyler_776499" name="biocrnpyler_776499" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
+  <model id="biocrnpyler_624668" name="biocrnpyler_624668" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
     <listOfUnitDefinitions>
       <unitDefinition id="square_metre">
         <listOfUnits>
@@ -12,33 +12,33 @@
       <compartment id="default" name="default" spatialDimensions="3" size="1e-06" constant="true"/>
     </listOfCompartments>
     <listOfSpecies>
-      <species id="complex_protein_RNAase_transcript_vioA" name="complex_protein_RNAase_transcript_vioA" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="transcript_vioA" name="transcript_vioA" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="enzyme_VioA" name="enzyme_VioA" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="protein_RNAP" name="protein_RNAP" compartment="default" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_protein_Ribo_transcript_vioA" name="complex_protein_Ribo_transcript_vioA" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="protein_RNAase" name="protein_RNAase" compartment="default" initialConcentration="6" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="complex_dna_dna_vioA_protein_RNAP" name="complex_dna_dna_vioA_protein_RNAP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="protein_Ribo" name="protein_Ribo" compartment="default" initialConcentration="24" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_Ribo_transcript_vioA" name="complex_protein_Ribo_transcript_vioA" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="dna_dna_vioA" name="dna_dna_vioA" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_protein_Ribo_transcript_vioB" name="complex_protein_Ribo_transcript_vioB" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_protein_RNAase_transcript_vioB" name="complex_protein_RNAase_transcript_vioB" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="transcript_vioB" name="transcript_vioB" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="transcript_vioA" name="transcript_vioA" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_RNAase" name="protein_RNAase" compartment="default" initialConcentration="6" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_RNAase_transcript_vioA" name="complex_protein_RNAase_transcript_vioA" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_RNAP" name="protein_RNAP" compartment="default" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="enzyme_VioB" name="enzyme_VioB" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_RNAase_transcript_vioB" name="complex_protein_RNAase_transcript_vioB" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_Ribo_transcript_vioB" name="complex_protein_Ribo_transcript_vioB" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="complex_dna_dna_vioB_protein_RNAP" name="complex_dna_dna_vioB_protein_RNAP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="transcript_vioB" name="transcript_vioB" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="dna_dna_vioB" name="dna_dna_vioB" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_VioE" name="enzyme_VioE" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="complex_protein_Ribo_transcript_vioE" name="complex_protein_Ribo_transcript_vioE" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_RNAase_transcript_vioE" name="complex_protein_RNAase_transcript_vioE" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="dna_dna_vioE" name="dna_dna_vioE" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="transcript_vioE" name="transcript_vioE" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="complex_dna_dna_vioE_protein_RNAP" name="complex_dna_dna_vioE_protein_RNAP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_VioE" name="enzyme_VioE" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_protein_RNAase_transcript_vioE" name="complex_protein_RNAase_transcript_vioE" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="transcript_vioD" name="transcript_vioD" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="dna_dna_vioD" name="dna_dna_vioD" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="complex_protein_Ribo_transcript_vioD" name="complex_protein_Ribo_transcript_vioD" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_VioD" name="enzyme_VioD" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="complex_dna_dna_vioD_protein_RNAP" name="complex_dna_dna_vioD_protein_RNAP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_VioD" name="enzyme_VioD" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="complex_protein_RNAase_transcript_vioD" name="complex_protein_RNAase_transcript_vioD" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="dna_dna_vioD" name="dna_dna_vioD" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="TRP" name="TRP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="IPA_imine" name="IPA_imine" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="complex_TRP_enzyme_VioA" name="complex_TRP_enzyme_VioA" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
@@ -932,7 +932,7 @@
       </reaction>
       <reaction id="r36" name="r36" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=10</PropensityType>
+          <PropensityType> type=massaction k=0.002777777777777778</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="TRP" stoichiometry="1" constant="false"/>
@@ -951,13 +951,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="10"/>
+            <localParameter id="k" value="0.00277777777777778"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r36_1" name="r36_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=1</PropensityType>
+          <PropensityType> type=massaction k=0.0002777777777777778</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_TRP_enzyme_VioA" stoichiometry="1" constant="false"/>
@@ -975,13 +975,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="1"/>
+            <localParameter id="k" value="0.000277777777777778"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r38" name="r38" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=203</PropensityType>
+          <PropensityType> type=massaction k=0.0009388888888888888</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_TRP_enzyme_VioA" stoichiometry="1" constant="false"/>
@@ -999,13 +999,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="203"/>
+            <localParameter id="k" value="0.000938888888888889"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r39" name="r39" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=10</PropensityType>
+          <PropensityType> type=massaction k=0.002777777777777778</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="IPA_imine" stoichiometry="2" constant="false"/>
@@ -1028,13 +1028,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="10"/>
+            <localParameter id="k" value="0.00277777777777778"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r39_1" name="r39_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=1</PropensityType>
+          <PropensityType> type=massaction k=0.0002777777777777778</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_2x_IPA_imine_enzyme_VioB" stoichiometry="1" constant="false"/>
@@ -1052,13 +1052,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="1"/>
+            <localParameter id="k" value="0.000277777777777778"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r41" name="r41" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=4500.0</PropensityType>
+          <PropensityType> type=massaction k=1.25</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_2x_IPA_imine_enzyme_VioB" stoichiometry="1" constant="false"/>
@@ -1076,7 +1076,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="4500"/>
+            <localParameter id="k" value="1.25"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -1131,7 +1131,7 @@
       </reaction>
       <reaction id="r44" name="r44" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=100</PropensityType>
+          <PropensityType> type=massaction k=0.027777777777777776</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_IPA_imine_dimer_enzyme_VioE" stoichiometry="1" constant="false"/>
@@ -1149,7 +1149,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="100"/>
+            <localParameter id="k" value="0.0277777777777778"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -1204,7 +1204,7 @@
       </reaction>
       <reaction id="r47" name="r47" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=100</PropensityType>
+          <PropensityType> type=massaction k=0.027777777777777776</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_PTDVA_enzyme_VioD" stoichiometry="1" constant="false"/>
@@ -1222,7 +1222,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="100"/>
+            <localParameter id="k" value="0.0277777777777778"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>

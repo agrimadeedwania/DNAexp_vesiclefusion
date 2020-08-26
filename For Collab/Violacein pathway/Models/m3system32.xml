@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
-  <model id="combined_model_of__combined_model_of__combined_model_of__external_reservoir_model_combined_model_of__atc_membrane_dnaexp_membrane_combined_model_of__biocrnpyler_855875_combined_model_of__combined_model_of__external_reservoir_model_combined_model_of__atc_membrane2_combined_model_of__biocrnpyler_776499_combined_model_of__combined_model_of__external_reservoir_model_combined_model_of__atc_membrane3_combined_model_of__biocrnpyler_392656" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
+  <model id="combined_model_of__combined_model_of__combined_model_of__external_reservoir_model_combined_model_of__atc_membrane_dnaexp_membrane_combined_model_of__biocrnpyler_855875_combined_model_of__combined_model_of__external_reservoir_model_combined_model_of__atc_membrane2_combined_model_of__biocrnpyler_624668_combined_model_of__combined_model_of__external_reservoir_model_combined_model_of__atc_membrane3_combined_model_of__biocrnpyler_693963" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
     <listOfUnitDefinitions>
       <unitDefinition id="square_metre">
         <listOfUnits>
@@ -43,59 +43,59 @@
       <species id="P_biocrnpyler_855875" name="P" compartment="cell_1_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="atc_i_cell2" name="atc_i_cell2" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="ssDNA_comp1" name="ssDNA_comp1" compartment="cell_2_internal_combined" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_protein_RNAase_transcript_vioA_biocrnpyler_776499" name="complex_protein_RNAase_transcript_vioA" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="transcript_vioA_biocrnpyler_776499" name="transcript_vioA" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_VioA_biocrnpyler_776499" name="enzyme_VioA" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="protein_RNAP_biocrnpyler_776499" name="protein_RNAP" compartment="cell_2_internal_combined" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_protein_Ribo_transcript_vioA_biocrnpyler_776499" name="complex_protein_Ribo_transcript_vioA" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="protein_RNAase_biocrnpyler_776499" name="protein_RNAase" compartment="cell_2_internal_combined" initialConcentration="6" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_dna_dna_vioA_protein_RNAP_biocrnpyler_776499" name="complex_dna_dna_vioA_protein_RNAP" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="protein_Ribo_biocrnpyler_776499" name="protein_Ribo" compartment="cell_2_internal_combined" initialConcentration="24" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="dna_dna_vioA_biocrnpyler_776499" name="dna_dna_vioA" compartment="cell_2_internal_combined" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_protein_Ribo_transcript_vioB_biocrnpyler_776499" name="complex_protein_Ribo_transcript_vioB" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_protein_RNAase_transcript_vioB_biocrnpyler_776499" name="complex_protein_RNAase_transcript_vioB" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="transcript_vioB_biocrnpyler_776499" name="transcript_vioB" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_VioB_biocrnpyler_776499" name="enzyme_VioB" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_dna_dna_vioB_protein_RNAP_biocrnpyler_776499" name="complex_dna_dna_vioB_protein_RNAP" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="dna_dna_vioB_biocrnpyler_776499" name="dna_dna_vioB" compartment="cell_2_internal_combined" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_protein_Ribo_transcript_vioE_biocrnpyler_776499" name="complex_protein_Ribo_transcript_vioE" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="dna_dna_vioE_biocrnpyler_776499" name="dna_dna_vioE" compartment="cell_2_internal_combined" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="transcript_vioE_biocrnpyler_776499" name="transcript_vioE" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_dna_dna_vioE_protein_RNAP_biocrnpyler_776499" name="complex_dna_dna_vioE_protein_RNAP" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_VioE_biocrnpyler_776499" name="enzyme_VioE" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_protein_RNAase_transcript_vioE_biocrnpyler_776499" name="complex_protein_RNAase_transcript_vioE" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="transcript_vioD_biocrnpyler_776499" name="transcript_vioD" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="dna_dna_vioD_biocrnpyler_776499" name="dna_dna_vioD" compartment="cell_2_internal_combined" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_protein_Ribo_transcript_vioD_biocrnpyler_776499" name="complex_protein_Ribo_transcript_vioD" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_VioD_biocrnpyler_776499" name="enzyme_VioD" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_dna_dna_vioD_protein_RNAP_biocrnpyler_776499" name="complex_dna_dna_vioD_protein_RNAP" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_protein_RNAase_transcript_vioD_biocrnpyler_776499" name="complex_protein_RNAase_transcript_vioD" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="TRP_biocrnpyler_776499" name="TRP" compartment="cell_2_internal_combined" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="IPA_imine_biocrnpyler_776499" name="IPA_imine" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_TRP_enzyme_VioA_biocrnpyler_776499" name="complex_TRP_enzyme_VioA" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="IPA_imine_dimer_biocrnpyler_776499" name="IPA_imine_dimer" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_2x_IPA_imine_enzyme_VioB_biocrnpyler_776499" name="complex_2x_IPA_imine_enzyme_VioB" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="PTDVA_biocrnpyler_776499" name="PTDVA" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_IPA_imine_dimer_enzyme_VioE_biocrnpyler_776499" name="complex_IPA_imine_dimer_enzyme_VioE" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="PTVA_biocrnpyler_776499" name="PTVA" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_PTDVA_enzyme_VioD_biocrnpyler_776499" name="complex_PTDVA_enzyme_VioD" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_VioA_biocrnpyler_624668" name="enzyme_VioA" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_dna_dna_vioA_protein_RNAP_biocrnpyler_624668" name="complex_dna_dna_vioA_protein_RNAP" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_Ribo_biocrnpyler_624668" name="protein_Ribo" compartment="cell_2_internal_combined" initialConcentration="24" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_Ribo_transcript_vioA_biocrnpyler_624668" name="complex_protein_Ribo_transcript_vioA" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="dna_dna_vioA_biocrnpyler_624668" name="dna_dna_vioA" compartment="cell_2_internal_combined" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="transcript_vioA_biocrnpyler_624668" name="transcript_vioA" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_RNAase_biocrnpyler_624668" name="protein_RNAase" compartment="cell_2_internal_combined" initialConcentration="6" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_RNAase_transcript_vioA_biocrnpyler_624668" name="complex_protein_RNAase_transcript_vioA" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_RNAP_biocrnpyler_624668" name="protein_RNAP" compartment="cell_2_internal_combined" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_VioB_biocrnpyler_624668" name="enzyme_VioB" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_RNAase_transcript_vioB_biocrnpyler_624668" name="complex_protein_RNAase_transcript_vioB" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_Ribo_transcript_vioB_biocrnpyler_624668" name="complex_protein_Ribo_transcript_vioB" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_dna_dna_vioB_protein_RNAP_biocrnpyler_624668" name="complex_dna_dna_vioB_protein_RNAP" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="transcript_vioB_biocrnpyler_624668" name="transcript_vioB" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="dna_dna_vioB_biocrnpyler_624668" name="dna_dna_vioB" compartment="cell_2_internal_combined" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_VioE_biocrnpyler_624668" name="enzyme_VioE" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_Ribo_transcript_vioE_biocrnpyler_624668" name="complex_protein_Ribo_transcript_vioE" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_RNAase_transcript_vioE_biocrnpyler_624668" name="complex_protein_RNAase_transcript_vioE" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="dna_dna_vioE_biocrnpyler_624668" name="dna_dna_vioE" compartment="cell_2_internal_combined" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="transcript_vioE_biocrnpyler_624668" name="transcript_vioE" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_dna_dna_vioE_protein_RNAP_biocrnpyler_624668" name="complex_dna_dna_vioE_protein_RNAP" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="transcript_vioD_biocrnpyler_624668" name="transcript_vioD" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_Ribo_transcript_vioD_biocrnpyler_624668" name="complex_protein_Ribo_transcript_vioD" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_dna_dna_vioD_protein_RNAP_biocrnpyler_624668" name="complex_dna_dna_vioD_protein_RNAP" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_VioD_biocrnpyler_624668" name="enzyme_VioD" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_RNAase_transcript_vioD_biocrnpyler_624668" name="complex_protein_RNAase_transcript_vioD" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="dna_dna_vioD_biocrnpyler_624668" name="dna_dna_vioD" compartment="cell_2_internal_combined" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="TRP_biocrnpyler_624668" name="TRP" compartment="cell_2_internal_combined" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="IPA_imine_biocrnpyler_624668" name="IPA_imine" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_TRP_enzyme_VioA_biocrnpyler_624668" name="complex_TRP_enzyme_VioA" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="IPA_imine_dimer_biocrnpyler_624668" name="IPA_imine_dimer" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_2x_IPA_imine_enzyme_VioB_biocrnpyler_624668" name="complex_2x_IPA_imine_enzyme_VioB" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="PTDVA_biocrnpyler_624668" name="PTDVA" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_IPA_imine_dimer_enzyme_VioE_biocrnpyler_624668" name="complex_IPA_imine_dimer_enzyme_VioE" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="PTVA_biocrnpyler_624668" name="PTVA" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_PTDVA_enzyme_VioD_biocrnpyler_624668" name="complex_PTDVA_enzyme_VioD" compartment="cell_2_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="atc_i_cell3" name="atc_i_cell3" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="ssDNA_comp2" name="ssDNA_comp2" compartment="cell_3_internal_combined" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_VioC_biocrnpyler_392656" name="enzyme_VioC" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="protein_RNAP_biocrnpyler_392656" name="protein_RNAP" compartment="cell_3_internal_combined" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="protein_RNAase_biocrnpyler_392656" name="protein_RNAase" compartment="cell_3_internal_combined" initialConcentration="6" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="transcript_vioC_biocrnpyler_392656" name="transcript_vioC" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="protein_Ribo_biocrnpyler_392656" name="protein_Ribo" compartment="cell_3_internal_combined" initialConcentration="24" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_protein_RNAase_transcript_vioC_biocrnpyler_392656" name="complex_protein_RNAase_transcript_vioC" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_protein_Ribo_transcript_vioC_biocrnpyler_392656" name="complex_protein_Ribo_transcript_vioC" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_dna_dna_vioC_protein_RNAP_biocrnpyler_392656" name="complex_dna_dna_vioC_protein_RNAP" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="dna_dna_vioC_biocrnpyler_392656" name="dna_dna_vioC" compartment="cell_3_internal_combined" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="PTVA_biocrnpyler_392656" name="PTVA" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="V_biocrnpyler_392656" name="V" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_PTVA_enzyme_VioC_biocrnpyler_392656" name="complex_PTVA_enzyme_VioC" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="PTDVA_biocrnpyler_392656" name="PTDVA" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="DV_biocrnpyler_392656" name="DV" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_PTDVA_enzyme_VioC_biocrnpyler_392656" name="complex_PTDVA_enzyme_VioC" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_Ribo_transcript_vioC_biocrnpyler_693963" name="complex_protein_Ribo_transcript_vioC" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_dna_dna_vioC_protein_RNAP_biocrnpyler_693963" name="complex_dna_dna_vioC_protein_RNAP" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="transcript_vioC_biocrnpyler_693963" name="transcript_vioC" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_Ribo_biocrnpyler_693963" name="protein_Ribo" compartment="cell_3_internal_combined" initialConcentration="24" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_RNAase_biocrnpyler_693963" name="protein_RNAase" compartment="cell_3_internal_combined" initialConcentration="6" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_VioC_biocrnpyler_693963" name="enzyme_VioC" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_RNAase_transcript_vioC_biocrnpyler_693963" name="complex_protein_RNAase_transcript_vioC" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="dna_dna_vioC_biocrnpyler_693963" name="dna_dna_vioC" compartment="cell_3_internal_combined" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_RNAP_biocrnpyler_693963" name="protein_RNAP" compartment="cell_3_internal_combined" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="PTVA_biocrnpyler_693963" name="PTVA" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="V_biocrnpyler_693963" name="V" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_PTVA_enzyme_VioC_biocrnpyler_693963" name="complex_PTVA_enzyme_VioC" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="PTDVA_biocrnpyler_693963" name="PTDVA" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="DV_biocrnpyler_693963" name="DV" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_PTDVA_enzyme_VioC_biocrnpyler_693963" name="complex_PTDVA_enzyme_VioC" compartment="cell_3_internal_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="atc_e_external_reservoir_model_1_combined_1_combined" name="atc_e" compartment="cell_external" initialConcentration="10000" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="dsDNA" name="dsDNA" compartment="cell_external_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
@@ -556,24 +556,24 @@
           </math>
         </kineticLaw>
       </reaction>
-      <reaction id="r0_biocrnpyler_776499" name="r0" reversible="false">
+      <reaction id="r0_biocrnpyler_624668" name="r0" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=100.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="dna_dna_vioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_dna_vioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_dna_dna_vioA_protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_dna_vioA_protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> dna_dna_vioA_biocrnpyler_776499 </ci>
-              <ci> protein_RNAP_biocrnpyler_776499 </ci>
+              <ci> dna_dna_vioA_biocrnpyler_624668 </ci>
+              <ci> protein_RNAP_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -581,23 +581,23 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r0_1_biocrnpyler_776499" name="r0_1" reversible="false">
+      <reaction id="r0_1_biocrnpyler_624668" name="r0_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=10.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_dna_dna_vioA_protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_dna_vioA_protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna_dna_vioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_dna_vioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_dna_dna_vioA_protein_RNAP_biocrnpyler_776499 </ci>
+              <ci> complex_dna_dna_vioA_protein_RNAP_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -605,24 +605,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r2_biocrnpyler_776499" name="r2" reversible="false">
+      <reaction id="r2_biocrnpyler_624668" name="r2" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=0.05  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_dna_dna_vioA_protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_dna_vioA_protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna_dna_vioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="transcript_vioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_dna_vioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_dna_dna_vioA_protein_RNAP_biocrnpyler_776499 </ci>
+              <ci> complex_dna_dna_vioA_protein_RNAP_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -630,24 +630,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r3_biocrnpyler_776499" name="r3" reversible="false">
+      <reaction id="r3_biocrnpyler_624668" name="r3" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=100.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="transcript_vioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_Ribo_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_protein_Ribo_transcript_vioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_Ribo_transcript_vioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> transcript_vioA_biocrnpyler_776499 </ci>
-              <ci> protein_Ribo_biocrnpyler_776499 </ci>
+              <ci> transcript_vioA_biocrnpyler_624668 </ci>
+              <ci> protein_Ribo_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -655,23 +655,23 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r3_1_biocrnpyler_776499" name="r3_1" reversible="false">
+      <reaction id="r3_1_biocrnpyler_624668" name="r3_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=10.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_Ribo_transcript_vioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_Ribo_transcript_vioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="transcript_vioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_Ribo_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_Ribo_transcript_vioA_biocrnpyler_776499 </ci>
+              <ci> complex_protein_Ribo_transcript_vioA_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -679,24 +679,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r5_biocrnpyler_776499" name="r5" reversible="false">
+      <reaction id="r5_biocrnpyler_624668" name="r5" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=0.05  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_Ribo_transcript_vioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_Ribo_transcript_vioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="transcript_vioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_Ribo_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_Ribo_transcript_vioA_biocrnpyler_776499 </ci>
+              <ci> complex_protein_Ribo_transcript_vioA_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -704,24 +704,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r6_biocrnpyler_776499" name="r6" reversible="false">
+      <reaction id="r6_biocrnpyler_624668" name="r6" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=100.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="transcript_vioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAase_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_protein_RNAase_transcript_vioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_RNAase_transcript_vioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> transcript_vioA_biocrnpyler_776499 </ci>
-              <ci> protein_RNAase_biocrnpyler_776499 </ci>
+              <ci> transcript_vioA_biocrnpyler_624668 </ci>
+              <ci> protein_RNAase_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -729,23 +729,23 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r6_1_biocrnpyler_776499" name="r6_1" reversible="false">
+      <reaction id="r6_1_biocrnpyler_624668" name="r6_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=10.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_RNAase_transcript_vioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_RNAase_transcript_vioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="transcript_vioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAase_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_RNAase_transcript_vioA_biocrnpyler_776499 </ci>
+              <ci> complex_protein_RNAase_transcript_vioA_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -753,22 +753,22 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r8_biocrnpyler_776499" name="r8" reversible="false">
+      <reaction id="r8_biocrnpyler_624668" name="r8" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=0.001  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_RNAase_transcript_vioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_RNAase_transcript_vioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="protein_RNAase_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_RNAase_transcript_vioA_biocrnpyler_776499 </ci>
+              <ci> complex_protein_RNAase_transcript_vioA_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -776,24 +776,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r9_biocrnpyler_776499" name="r9" reversible="false">
+      <reaction id="r9_biocrnpyler_624668" name="r9" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=100.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="dna_dna_vioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_dna_vioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_dna_dna_vioB_protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_dna_vioB_protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> dna_dna_vioB_biocrnpyler_776499 </ci>
-              <ci> protein_RNAP_biocrnpyler_776499 </ci>
+              <ci> dna_dna_vioB_biocrnpyler_624668 </ci>
+              <ci> protein_RNAP_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -801,23 +801,23 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r9_1_biocrnpyler_776499" name="r9_1" reversible="false">
+      <reaction id="r9_1_biocrnpyler_624668" name="r9_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=10.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_dna_dna_vioB_protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_dna_vioB_protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna_dna_vioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_dna_vioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_dna_dna_vioB_protein_RNAP_biocrnpyler_776499 </ci>
+              <ci> complex_dna_dna_vioB_protein_RNAP_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -825,24 +825,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r11_biocrnpyler_776499" name="r11" reversible="false">
+      <reaction id="r11_biocrnpyler_624668" name="r11" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=0.05  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_dna_dna_vioB_protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_dna_vioB_protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna_dna_vioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="transcript_vioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_dna_vioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_dna_dna_vioB_protein_RNAP_biocrnpyler_776499 </ci>
+              <ci> complex_dna_dna_vioB_protein_RNAP_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -850,24 +850,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r12_biocrnpyler_776499" name="r12" reversible="false">
+      <reaction id="r12_biocrnpyler_624668" name="r12" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=100.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="transcript_vioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_Ribo_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_protein_Ribo_transcript_vioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_Ribo_transcript_vioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> transcript_vioB_biocrnpyler_776499 </ci>
-              <ci> protein_Ribo_biocrnpyler_776499 </ci>
+              <ci> transcript_vioB_biocrnpyler_624668 </ci>
+              <ci> protein_Ribo_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -875,23 +875,23 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r12_1_biocrnpyler_776499" name="r12_1" reversible="false">
+      <reaction id="r12_1_biocrnpyler_624668" name="r12_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=10.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_Ribo_transcript_vioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_Ribo_transcript_vioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="transcript_vioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_Ribo_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_Ribo_transcript_vioB_biocrnpyler_776499 </ci>
+              <ci> complex_protein_Ribo_transcript_vioB_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -899,24 +899,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r14_biocrnpyler_776499" name="r14" reversible="false">
+      <reaction id="r14_biocrnpyler_624668" name="r14" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=0.05  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_Ribo_transcript_vioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_Ribo_transcript_vioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="transcript_vioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_Ribo_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_Ribo_transcript_vioB_biocrnpyler_776499 </ci>
+              <ci> complex_protein_Ribo_transcript_vioB_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -924,24 +924,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r15_biocrnpyler_776499" name="r15" reversible="false">
+      <reaction id="r15_biocrnpyler_624668" name="r15" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=100.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="transcript_vioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAase_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_protein_RNAase_transcript_vioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_RNAase_transcript_vioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> transcript_vioB_biocrnpyler_776499 </ci>
-              <ci> protein_RNAase_biocrnpyler_776499 </ci>
+              <ci> transcript_vioB_biocrnpyler_624668 </ci>
+              <ci> protein_RNAase_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -949,23 +949,23 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r15_1_biocrnpyler_776499" name="r15_1" reversible="false">
+      <reaction id="r15_1_biocrnpyler_624668" name="r15_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=10.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_RNAase_transcript_vioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_RNAase_transcript_vioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="transcript_vioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAase_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_RNAase_transcript_vioB_biocrnpyler_776499 </ci>
+              <ci> complex_protein_RNAase_transcript_vioB_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -973,22 +973,22 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r17_biocrnpyler_776499" name="r17" reversible="false">
+      <reaction id="r17_biocrnpyler_624668" name="r17" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=0.001  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_RNAase_transcript_vioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_RNAase_transcript_vioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="protein_RNAase_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_RNAase_transcript_vioB_biocrnpyler_776499 </ci>
+              <ci> complex_protein_RNAase_transcript_vioB_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -996,24 +996,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r18_biocrnpyler_776499" name="r18" reversible="false">
+      <reaction id="r18_biocrnpyler_624668" name="r18" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=100.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="dna_dna_vioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_dna_vioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_dna_dna_vioE_protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_dna_vioE_protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> dna_dna_vioE_biocrnpyler_776499 </ci>
-              <ci> protein_RNAP_biocrnpyler_776499 </ci>
+              <ci> dna_dna_vioE_biocrnpyler_624668 </ci>
+              <ci> protein_RNAP_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1021,23 +1021,23 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r18_1_biocrnpyler_776499" name="r18_1" reversible="false">
+      <reaction id="r18_1_biocrnpyler_624668" name="r18_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=10.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_dna_dna_vioE_protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_dna_vioE_protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna_dna_vioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_dna_vioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_dna_dna_vioE_protein_RNAP_biocrnpyler_776499 </ci>
+              <ci> complex_dna_dna_vioE_protein_RNAP_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1045,24 +1045,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r20_biocrnpyler_776499" name="r20" reversible="false">
+      <reaction id="r20_biocrnpyler_624668" name="r20" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=0.05  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_dna_dna_vioE_protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_dna_vioE_protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna_dna_vioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="transcript_vioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_dna_vioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_dna_dna_vioE_protein_RNAP_biocrnpyler_776499 </ci>
+              <ci> complex_dna_dna_vioE_protein_RNAP_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1070,24 +1070,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r21_biocrnpyler_776499" name="r21" reversible="false">
+      <reaction id="r21_biocrnpyler_624668" name="r21" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=100.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="transcript_vioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_Ribo_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_protein_Ribo_transcript_vioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_Ribo_transcript_vioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> transcript_vioE_biocrnpyler_776499 </ci>
-              <ci> protein_Ribo_biocrnpyler_776499 </ci>
+              <ci> transcript_vioE_biocrnpyler_624668 </ci>
+              <ci> protein_Ribo_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1095,23 +1095,23 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r21_1_biocrnpyler_776499" name="r21_1" reversible="false">
+      <reaction id="r21_1_biocrnpyler_624668" name="r21_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=10.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_Ribo_transcript_vioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_Ribo_transcript_vioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="transcript_vioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_Ribo_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_Ribo_transcript_vioE_biocrnpyler_776499 </ci>
+              <ci> complex_protein_Ribo_transcript_vioE_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1119,24 +1119,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r23_biocrnpyler_776499" name="r23" reversible="false">
+      <reaction id="r23_biocrnpyler_624668" name="r23" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=0.05  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_Ribo_transcript_vioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_Ribo_transcript_vioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="transcript_vioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_Ribo_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_Ribo_transcript_vioE_biocrnpyler_776499 </ci>
+              <ci> complex_protein_Ribo_transcript_vioE_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1144,24 +1144,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r24_biocrnpyler_776499" name="r24" reversible="false">
+      <reaction id="r24_biocrnpyler_624668" name="r24" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=100.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="transcript_vioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAase_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_protein_RNAase_transcript_vioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_RNAase_transcript_vioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> transcript_vioE_biocrnpyler_776499 </ci>
-              <ci> protein_RNAase_biocrnpyler_776499 </ci>
+              <ci> transcript_vioE_biocrnpyler_624668 </ci>
+              <ci> protein_RNAase_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1169,23 +1169,23 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r24_1_biocrnpyler_776499" name="r24_1" reversible="false">
+      <reaction id="r24_1_biocrnpyler_624668" name="r24_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=10.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_RNAase_transcript_vioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_RNAase_transcript_vioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="transcript_vioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAase_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_RNAase_transcript_vioE_biocrnpyler_776499 </ci>
+              <ci> complex_protein_RNAase_transcript_vioE_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1193,22 +1193,22 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r26_biocrnpyler_776499" name="r26" reversible="false">
+      <reaction id="r26_biocrnpyler_624668" name="r26" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=0.001  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_RNAase_transcript_vioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_RNAase_transcript_vioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="protein_RNAase_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_RNAase_transcript_vioE_biocrnpyler_776499 </ci>
+              <ci> complex_protein_RNAase_transcript_vioE_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1216,24 +1216,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r27_biocrnpyler_776499" name="r27" reversible="false">
+      <reaction id="r27_biocrnpyler_624668" name="r27" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=100.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="dna_dna_vioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_dna_vioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_dna_dna_vioD_protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_dna_vioD_protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> dna_dna_vioD_biocrnpyler_776499 </ci>
-              <ci> protein_RNAP_biocrnpyler_776499 </ci>
+              <ci> dna_dna_vioD_biocrnpyler_624668 </ci>
+              <ci> protein_RNAP_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1241,23 +1241,23 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r27_1_biocrnpyler_776499" name="r27_1" reversible="false">
+      <reaction id="r27_1_biocrnpyler_624668" name="r27_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=10.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_dna_dna_vioD_protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_dna_vioD_protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna_dna_vioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_dna_vioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_dna_dna_vioD_protein_RNAP_biocrnpyler_776499 </ci>
+              <ci> complex_dna_dna_vioD_protein_RNAP_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1265,24 +1265,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r29_biocrnpyler_776499" name="r29" reversible="false">
+      <reaction id="r29_biocrnpyler_624668" name="r29" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=0.05  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_dna_dna_vioD_protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_dna_vioD_protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna_dna_vioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="transcript_vioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_dna_vioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_dna_dna_vioD_protein_RNAP_biocrnpyler_776499 </ci>
+              <ci> complex_dna_dna_vioD_protein_RNAP_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1290,24 +1290,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r30_biocrnpyler_776499" name="r30" reversible="false">
+      <reaction id="r30_biocrnpyler_624668" name="r30" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=100.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="transcript_vioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_Ribo_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_protein_Ribo_transcript_vioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_Ribo_transcript_vioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> transcript_vioD_biocrnpyler_776499 </ci>
-              <ci> protein_Ribo_biocrnpyler_776499 </ci>
+              <ci> transcript_vioD_biocrnpyler_624668 </ci>
+              <ci> protein_Ribo_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1315,23 +1315,23 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r30_1_biocrnpyler_776499" name="r30_1" reversible="false">
+      <reaction id="r30_1_biocrnpyler_624668" name="r30_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=10.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_Ribo_transcript_vioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_Ribo_transcript_vioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="transcript_vioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_Ribo_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_Ribo_transcript_vioD_biocrnpyler_776499 </ci>
+              <ci> complex_protein_Ribo_transcript_vioD_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1339,24 +1339,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r32_biocrnpyler_776499" name="r32" reversible="false">
+      <reaction id="r32_biocrnpyler_624668" name="r32" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=0.05  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_Ribo_transcript_vioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_Ribo_transcript_vioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="transcript_vioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_Ribo_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_Ribo_transcript_vioD_biocrnpyler_776499 </ci>
+              <ci> complex_protein_Ribo_transcript_vioD_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1364,24 +1364,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r33_biocrnpyler_776499" name="r33" reversible="false">
+      <reaction id="r33_biocrnpyler_624668" name="r33" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=100.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="transcript_vioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAase_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_protein_RNAase_transcript_vioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_RNAase_transcript_vioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> transcript_vioD_biocrnpyler_776499 </ci>
-              <ci> protein_RNAase_biocrnpyler_776499 </ci>
+              <ci> transcript_vioD_biocrnpyler_624668 </ci>
+              <ci> protein_RNAase_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1389,23 +1389,23 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r33_1_biocrnpyler_776499" name="r33_1" reversible="false">
+      <reaction id="r33_1_biocrnpyler_624668" name="r33_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=10.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_RNAase_transcript_vioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_RNAase_transcript_vioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="transcript_vioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAase_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_RNAase_transcript_vioD_biocrnpyler_776499 </ci>
+              <ci> complex_protein_RNAase_transcript_vioD_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1413,22 +1413,22 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r35_biocrnpyler_776499" name="r35" reversible="false">
+      <reaction id="r35_biocrnpyler_624668" name="r35" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=0.001  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_RNAase_transcript_vioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_RNAase_transcript_vioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="protein_RNAase_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_RNAase_transcript_vioD_biocrnpyler_776499 </ci>
+              <ci> complex_protein_RNAase_transcript_vioD_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1436,89 +1436,89 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r36_biocrnpyler_776499" name="r36" reversible="false">
+      <reaction id="r36_biocrnpyler_624668" name="r36" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=10  </PropensityType>
+          <PropensityType> type=massaction k=0.002777777777777778  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="TRP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="TRP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_TRP_enzyme_VioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_TRP_enzyme_VioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> TRP_biocrnpyler_776499 </ci>
-              <ci> enzyme_VioA_biocrnpyler_776499 </ci>
+              <ci> TRP_biocrnpyler_624668 </ci>
+              <ci> enzyme_VioA_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="10"/>
+            <localParameter id="k" value="0.00277777777777778"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r36_1_biocrnpyler_776499" name="r36_1" reversible="false">
+      <reaction id="r36_1_biocrnpyler_624668" name="r36_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=1  </PropensityType>
+          <PropensityType> type=massaction k=0.0002777777777777778  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_TRP_enzyme_VioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_TRP_enzyme_VioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="TRP_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="TRP_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_TRP_enzyme_VioA_biocrnpyler_776499 </ci>
+              <ci> complex_TRP_enzyme_VioA_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="1"/>
+            <localParameter id="k" value="0.000277777777777778"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r38_biocrnpyler_776499" name="r38" reversible="false">
+      <reaction id="r38_biocrnpyler_624668" name="r38" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=203  </PropensityType>
+          <PropensityType> type=massaction k=0.0009388888888888888  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_TRP_enzyme_VioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_TRP_enzyme_VioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="IPA_imine_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="IPA_imine_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_TRP_enzyme_VioA_biocrnpyler_776499 </ci>
+              <ci> complex_TRP_enzyme_VioA_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="203"/>
+            <localParameter id="k" value="0.000938888888888889"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r39_biocrnpyler_776499" name="r39" reversible="false">
+      <reaction id="r39_biocrnpyler_624668" name="r39" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=10  </PropensityType>
+          <PropensityType> type=massaction k=0.002777777777777778  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="IPA_imine_biocrnpyler_776499" stoichiometry="2" constant="false"/>
-          <speciesReference species="enzyme_VioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="IPA_imine_biocrnpyler_624668" stoichiometry="2" constant="false"/>
+          <speciesReference species="enzyme_VioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_2x_IPA_imine_enzyme_VioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_2x_IPA_imine_enzyme_VioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -1527,156 +1527,83 @@
               <ci> k </ci>
               <apply>
                 <power/>
-                <ci> IPA_imine_biocrnpyler_776499 </ci>
+                <ci> IPA_imine_biocrnpyler_624668 </ci>
                 <cn type="integer"> 2 </cn>
               </apply>
-              <ci> enzyme_VioB_biocrnpyler_776499 </ci>
+              <ci> enzyme_VioB_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="10"/>
+            <localParameter id="k" value="0.00277777777777778"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r39_1_biocrnpyler_776499" name="r39_1" reversible="false">
+      <reaction id="r39_1_biocrnpyler_624668" name="r39_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=1  </PropensityType>
+          <PropensityType> type=massaction k=0.0002777777777777778  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_2x_IPA_imine_enzyme_VioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_2x_IPA_imine_enzyme_VioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="IPA_imine_biocrnpyler_776499" stoichiometry="2" constant="false"/>
-          <speciesReference species="enzyme_VioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="IPA_imine_biocrnpyler_624668" stoichiometry="2" constant="false"/>
+          <speciesReference species="enzyme_VioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_2x_IPA_imine_enzyme_VioB_biocrnpyler_776499 </ci>
+              <ci> complex_2x_IPA_imine_enzyme_VioB_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="1"/>
+            <localParameter id="k" value="0.000277777777777778"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r41_biocrnpyler_776499" name="r41" reversible="false">
+      <reaction id="r41_biocrnpyler_624668" name="r41" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=4500.0  </PropensityType>
+          <PropensityType> type=massaction k=1.25  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_2x_IPA_imine_enzyme_VioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_2x_IPA_imine_enzyme_VioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="IPA_imine_dimer_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioB_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="IPA_imine_dimer_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioB_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_2x_IPA_imine_enzyme_VioB_biocrnpyler_776499 </ci>
+              <ci> complex_2x_IPA_imine_enzyme_VioB_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="4500"/>
+            <localParameter id="k" value="1.25"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r42_biocrnpyler_776499" name="r42" reversible="false">
-        <annotation>
-          <PropensityType> type=massaction k=100.0  </PropensityType>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="IPA_imine_dimer_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="complex_IPA_imine_dimer_enzyme_VioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> k </ci>
-              <ci> IPA_imine_dimer_biocrnpyler_776499 </ci>
-              <ci> enzyme_VioE_biocrnpyler_776499 </ci>
-            </apply>
-          </math>
-          <listOfLocalParameters>
-            <localParameter id="k" value="100"/>
-          </listOfLocalParameters>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r42_1_biocrnpyler_776499" name="r42_1" reversible="false">
-        <annotation>
-          <PropensityType> type=massaction k=10.0  </PropensityType>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="complex_IPA_imine_dimer_enzyme_VioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="IPA_imine_dimer_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> k </ci>
-              <ci> complex_IPA_imine_dimer_enzyme_VioE_biocrnpyler_776499 </ci>
-            </apply>
-          </math>
-          <listOfLocalParameters>
-            <localParameter id="k" value="10"/>
-          </listOfLocalParameters>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r44_biocrnpyler_776499" name="r44" reversible="false">
-        <annotation>
-          <PropensityType> type=massaction k=100  </PropensityType>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="complex_IPA_imine_dimer_enzyme_VioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="PTDVA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioE_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> k </ci>
-              <ci> complex_IPA_imine_dimer_enzyme_VioE_biocrnpyler_776499 </ci>
-            </apply>
-          </math>
-          <listOfLocalParameters>
-            <localParameter id="k" value="100"/>
-          </listOfLocalParameters>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r45_biocrnpyler_776499" name="r45" reversible="false">
+      <reaction id="r42_biocrnpyler_624668" name="r42" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=100.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="PTDVA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="IPA_imine_dimer_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_PTDVA_enzyme_VioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_IPA_imine_dimer_enzyme_VioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> PTDVA_biocrnpyler_776499 </ci>
-              <ci> enzyme_VioD_biocrnpyler_776499 </ci>
+              <ci> IPA_imine_dimer_biocrnpyler_624668 </ci>
+              <ci> enzyme_VioE_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1684,23 +1611,23 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r45_1_biocrnpyler_776499" name="r45_1" reversible="false">
+      <reaction id="r42_1_biocrnpyler_624668" name="r42_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=10.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_PTDVA_enzyme_VioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_IPA_imine_dimer_enzyme_VioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="PTDVA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="IPA_imine_dimer_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_PTDVA_enzyme_VioD_biocrnpyler_776499 </ci>
+              <ci> complex_IPA_imine_dimer_enzyme_VioE_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1708,27 +1635,100 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r47_biocrnpyler_776499" name="r47" reversible="false">
+      <reaction id="r44_biocrnpyler_624668" name="r44" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=100  </PropensityType>
+          <PropensityType> type=massaction k=0.027777777777777776  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_PTDVA_enzyme_VioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_IPA_imine_dimer_enzyme_VioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="PTVA_biocrnpyler_776499" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioD_biocrnpyler_776499" stoichiometry="1" constant="false"/>
+          <speciesReference species="PTDVA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioE_biocrnpyler_624668" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_PTDVA_enzyme_VioD_biocrnpyler_776499 </ci>
+              <ci> complex_IPA_imine_dimer_enzyme_VioE_biocrnpyler_624668 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.0277777777777778"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r45_biocrnpyler_624668" name="r45" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=100.0  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="PTDVA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_PTDVA_enzyme_VioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> PTDVA_biocrnpyler_624668 </ci>
+              <ci> enzyme_VioD_biocrnpyler_624668 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
             <localParameter id="k" value="100"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r45_1_biocrnpyler_624668" name="r45_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=10.0  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_PTDVA_enzyme_VioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PTDVA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_PTDVA_enzyme_VioD_biocrnpyler_624668 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="10"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r47_biocrnpyler_624668" name="r47" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.027777777777777776  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_PTDVA_enzyme_VioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PTVA_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioD_biocrnpyler_624668" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_PTDVA_enzyme_VioD_biocrnpyler_624668 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.0277777777777778"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -1757,24 +1757,24 @@
           </math>
         </kineticLaw>
       </reaction>
-      <reaction id="r0_biocrnpyler_392656" name="r0" reversible="false">
+      <reaction id="r0_biocrnpyler_693963" name="r0" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=100.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="dna_dna_vioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAP_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_dna_vioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_dna_dna_vioC_protein_RNAP_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_dna_vioC_protein_RNAP_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> dna_dna_vioC_biocrnpyler_392656 </ci>
-              <ci> protein_RNAP_biocrnpyler_392656 </ci>
+              <ci> dna_dna_vioC_biocrnpyler_693963 </ci>
+              <ci> protein_RNAP_biocrnpyler_693963 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1782,23 +1782,23 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r0_1_biocrnpyler_392656" name="r0_1" reversible="false">
+      <reaction id="r0_1_biocrnpyler_693963" name="r0_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=10.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_dna_dna_vioC_protein_RNAP_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_dna_vioC_protein_RNAP_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna_dna_vioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAP_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_dna_vioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_dna_dna_vioC_protein_RNAP_biocrnpyler_392656 </ci>
+              <ci> complex_dna_dna_vioC_protein_RNAP_biocrnpyler_693963 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1806,24 +1806,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r2_biocrnpyler_392656" name="r2" reversible="false">
+      <reaction id="r2_biocrnpyler_693963" name="r2" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=0.05  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_dna_dna_vioC_protein_RNAP_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_dna_vioC_protein_RNAP_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna_dna_vioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
-          <speciesReference species="transcript_vioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAP_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_dna_vioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_dna_dna_vioC_protein_RNAP_biocrnpyler_392656 </ci>
+              <ci> complex_dna_dna_vioC_protein_RNAP_biocrnpyler_693963 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1831,24 +1831,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r3_biocrnpyler_392656" name="r3" reversible="false">
+      <reaction id="r3_biocrnpyler_693963" name="r3" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=100.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="transcript_vioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_Ribo_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_protein_Ribo_transcript_vioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_Ribo_transcript_vioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> transcript_vioC_biocrnpyler_392656 </ci>
-              <ci> protein_Ribo_biocrnpyler_392656 </ci>
+              <ci> transcript_vioC_biocrnpyler_693963 </ci>
+              <ci> protein_Ribo_biocrnpyler_693963 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1856,23 +1856,23 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r3_1_biocrnpyler_392656" name="r3_1" reversible="false">
+      <reaction id="r3_1_biocrnpyler_693963" name="r3_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=10.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_Ribo_transcript_vioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_Ribo_transcript_vioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="transcript_vioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_Ribo_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_Ribo_transcript_vioC_biocrnpyler_392656 </ci>
+              <ci> complex_protein_Ribo_transcript_vioC_biocrnpyler_693963 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1880,24 +1880,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r5_biocrnpyler_392656" name="r5" reversible="false">
+      <reaction id="r5_biocrnpyler_693963" name="r5" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=0.05  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_Ribo_transcript_vioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_Ribo_transcript_vioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="transcript_vioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_Ribo_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_Ribo_transcript_vioC_biocrnpyler_392656 </ci>
+              <ci> complex_protein_Ribo_transcript_vioC_biocrnpyler_693963 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1905,24 +1905,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r6_biocrnpyler_392656" name="r6" reversible="false">
+      <reaction id="r6_biocrnpyler_693963" name="r6" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=100.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="transcript_vioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAase_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_protein_RNAase_transcript_vioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_RNAase_transcript_vioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> transcript_vioC_biocrnpyler_392656 </ci>
-              <ci> protein_RNAase_biocrnpyler_392656 </ci>
+              <ci> transcript_vioC_biocrnpyler_693963 </ci>
+              <ci> protein_RNAase_biocrnpyler_693963 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1930,23 +1930,23 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r6_1_biocrnpyler_392656" name="r6_1" reversible="false">
+      <reaction id="r6_1_biocrnpyler_693963" name="r6_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=10.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_RNAase_transcript_vioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_RNAase_transcript_vioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="transcript_vioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
-          <speciesReference species="protein_RNAase_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_RNAase_transcript_vioC_biocrnpyler_392656 </ci>
+              <ci> complex_protein_RNAase_transcript_vioC_biocrnpyler_693963 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1954,22 +1954,22 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r8_biocrnpyler_392656" name="r8" reversible="false">
+      <reaction id="r8_biocrnpyler_693963" name="r8" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=0.001  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_protein_RNAase_transcript_vioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_protein_RNAase_transcript_vioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="protein_RNAase_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_protein_RNAase_transcript_vioC_biocrnpyler_392656 </ci>
+              <ci> complex_protein_RNAase_transcript_vioC_biocrnpyler_693963 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1977,24 +1977,24 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r9_biocrnpyler_392656" name="r9" reversible="false">
+      <reaction id="r9_biocrnpyler_693963" name="r9" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=100.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="PTVA_biocrnpyler_392656" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="PTVA_biocrnpyler_693963" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_PTVA_enzyme_VioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_PTVA_enzyme_VioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> PTVA_biocrnpyler_392656 </ci>
-              <ci> enzyme_VioC_biocrnpyler_392656 </ci>
+              <ci> PTVA_biocrnpyler_693963 </ci>
+              <ci> enzyme_VioC_biocrnpyler_693963 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -2002,23 +2002,23 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r9_1_biocrnpyler_392656" name="r9_1" reversible="false">
+      <reaction id="r9_1_biocrnpyler_693963" name="r9_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=10.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_PTVA_enzyme_VioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_PTVA_enzyme_VioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="PTVA_biocrnpyler_392656" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="PTVA_biocrnpyler_693963" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_PTVA_enzyme_VioC_biocrnpyler_392656 </ci>
+              <ci> complex_PTVA_enzyme_VioC_biocrnpyler_693963 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -2026,48 +2026,48 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r11_biocrnpyler_392656" name="r11" reversible="false">
+      <reaction id="r11_biocrnpyler_693963" name="r11" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=100  </PropensityType>
+          <PropensityType> type=massaction k=0.027777777777777776  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_PTVA_enzyme_VioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_PTVA_enzyme_VioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="V_biocrnpyler_392656" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="V_biocrnpyler_693963" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_PTVA_enzyme_VioC_biocrnpyler_392656 </ci>
+              <ci> complex_PTVA_enzyme_VioC_biocrnpyler_693963 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="100"/>
+            <localParameter id="k" value="0.0277777777777778"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r12_biocrnpyler_392656" name="r12" reversible="false">
+      <reaction id="r12_biocrnpyler_693963" name="r12" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=100.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="PTDVA_biocrnpyler_392656" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="PTDVA_biocrnpyler_693963" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_PTDVA_enzyme_VioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_PTDVA_enzyme_VioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> PTDVA_biocrnpyler_392656 </ci>
-              <ci> enzyme_VioC_biocrnpyler_392656 </ci>
+              <ci> PTDVA_biocrnpyler_693963 </ci>
+              <ci> enzyme_VioC_biocrnpyler_693963 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -2075,23 +2075,23 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r12_1_biocrnpyler_392656" name="r12_1" reversible="false">
+      <reaction id="r12_1_biocrnpyler_693963" name="r12_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=10.0  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_PTDVA_enzyme_VioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_PTDVA_enzyme_VioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="PTDVA_biocrnpyler_392656" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="PTDVA_biocrnpyler_693963" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_PTDVA_enzyme_VioC_biocrnpyler_392656 </ci>
+              <ci> complex_PTDVA_enzyme_VioC_biocrnpyler_693963 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -2099,27 +2099,27 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r14_biocrnpyler_392656" name="r14" reversible="false">
+      <reaction id="r14_biocrnpyler_693963" name="r14" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=100  </PropensityType>
+          <PropensityType> type=massaction k=0.027777777777777776  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_PTDVA_enzyme_VioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_PTDVA_enzyme_VioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="DV_biocrnpyler_392656" stoichiometry="1" constant="false"/>
-          <speciesReference species="enzyme_VioC_biocrnpyler_392656" stoichiometry="1" constant="false"/>
+          <speciesReference species="DV_biocrnpyler_693963" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioC_biocrnpyler_693963" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_PTDVA_enzyme_VioC_biocrnpyler_392656 </ci>
+              <ci> complex_PTDVA_enzyme_VioC_biocrnpyler_693963 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="100"/>
+            <localParameter id="k" value="0.0277777777777778"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>

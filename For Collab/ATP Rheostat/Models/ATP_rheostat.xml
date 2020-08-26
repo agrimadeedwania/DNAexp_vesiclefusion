@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
-  <model id="biocrnpyler_317929" name="biocrnpyler_317929" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
+  <model id="biocrnpyler_34510" name="biocrnpyler_34510" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
     <listOfUnitDefinitions>
       <unitDefinition id="square_metre">
         <listOfUnits>
@@ -81,7 +81,7 @@
     <listOfReactions>
       <reaction id="r0" name="r0" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_hex" stoichiometry="1" constant="false"/>
@@ -102,13 +102,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r0_1" name="r0_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_hex_metabolite_atp_molecule_glucose" stoichiometry="1" constant="false"/>
@@ -127,7 +127,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -156,7 +156,7 @@
       </reaction>
       <reaction id="r3" name="r3" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_hex_metabolite_adp_molecule_g6p" stoichiometry="1" constant="false"/>
@@ -175,13 +175,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r3_1" name="r3_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_hex" stoichiometry="1" constant="false"/>
@@ -202,13 +202,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r5" name="r5" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_pgi" stoichiometry="1" constant="false"/>
@@ -227,13 +227,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r5_1" name="r5_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_pgi_molecule_g6p" stoichiometry="1" constant="false"/>
@@ -251,7 +251,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -280,7 +280,7 @@
       </reaction>
       <reaction id="r8" name="r8" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_pgi_molecule_f6p" stoichiometry="1" constant="false"/>
@@ -298,13 +298,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r8_1" name="r8_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_pgi" stoichiometry="1" constant="false"/>
@@ -323,13 +323,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r10" name="r10" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_pfk" stoichiometry="1" constant="false"/>
@@ -350,13 +350,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r10_1" name="r10_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_pfk_metabolite_atp_molecule_f6p" stoichiometry="1" constant="false"/>
@@ -375,7 +375,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -404,7 +404,7 @@
       </reaction>
       <reaction id="r13" name="r13" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_pfk_metabolite_adp_molecule_f16p" stoichiometry="1" constant="false"/>
@@ -423,13 +423,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r13_1" name="r13_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_pfk" stoichiometry="1" constant="false"/>
@@ -450,13 +450,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r15" name="r15" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_ald_tpi" stoichiometry="1" constant="false"/>
@@ -475,13 +475,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r15_1" name="r15_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_ald_tpi_molecule_f16p" stoichiometry="1" constant="false"/>
@@ -499,7 +499,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -528,7 +528,7 @@
       </reaction>
       <reaction id="r18" name="r18" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_ald_tpi_2x_molecule_g3p" stoichiometry="1" constant="false"/>
@@ -546,13 +546,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r18_1" name="r18_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_ald_tpi" stoichiometry="1" constant="false"/>
@@ -575,13 +575,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r20" name="r20" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_gapN" stoichiometry="1" constant="false"/>
@@ -610,13 +610,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r20_1" name="r20_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p" stoichiometry="1" constant="false"/>
@@ -635,7 +635,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -664,7 +664,7 @@
       </reaction>
       <reaction id="r23" name="r23" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_gapN_2x_metabolite_nadph_2x_molecule_3pg" stoichiometry="1" constant="false"/>
@@ -683,13 +683,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r23_1" name="r23_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_gapN" stoichiometry="1" constant="false"/>
@@ -718,13 +718,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r25" name="r25" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_mGapDH" stoichiometry="1" constant="false"/>
@@ -755,13 +755,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r25_1" name="r25_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p" stoichiometry="1" constant="false"/>
@@ -781,7 +781,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -810,7 +810,7 @@
       </reaction>
       <reaction id="r28" name="r28" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_mGapDH_2x_metabolite_nadph_molecule_13bpg" stoichiometry="1" constant="false"/>
@@ -829,13 +829,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r28_1" name="r28_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_mGapDH" stoichiometry="1" constant="false"/>
@@ -860,13 +860,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r30" name="r30" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_pgk" stoichiometry="1" constant="false"/>
@@ -887,13 +887,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r30_1" name="r30_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_pgk_metabolite_adp_molecule_13bpg" stoichiometry="1" constant="false"/>
@@ -912,7 +912,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -941,7 +941,7 @@
       </reaction>
       <reaction id="r33" name="r33" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg" stoichiometry="1" constant="false"/>
@@ -960,13 +960,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r33_1" name="r33_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_pgk" stoichiometry="1" constant="false"/>
@@ -991,13 +991,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r35" name="r35" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_pgm" stoichiometry="1" constant="false"/>
@@ -1020,13 +1020,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r35_1" name="r35_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_pgm_2x_molecule_3pg" stoichiometry="1" constant="false"/>
@@ -1044,7 +1044,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -1073,7 +1073,7 @@
       </reaction>
       <reaction id="r38" name="r38" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_pgm_2x_molecule_2pg" stoichiometry="1" constant="false"/>
@@ -1091,13 +1091,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r38_1" name="r38_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_pgm" stoichiometry="1" constant="false"/>
@@ -1120,13 +1120,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r40" name="r40" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_eno" stoichiometry="1" constant="false"/>
@@ -1149,13 +1149,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r40_1" name="r40_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_eno_2x_molecule_2pg" stoichiometry="1" constant="false"/>
@@ -1173,7 +1173,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -1202,7 +1202,7 @@
       </reaction>
       <reaction id="r43" name="r43" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_eno_2x_molecule_pep" stoichiometry="1" constant="false"/>
@@ -1220,13 +1220,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r43_1" name="r43_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_eno" stoichiometry="1" constant="false"/>
@@ -1249,13 +1249,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r45" name="r45" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_pyk" stoichiometry="1" constant="false"/>
@@ -1284,13 +1284,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r45_1" name="r45_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep" stoichiometry="1" constant="false"/>
@@ -1309,7 +1309,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -1338,7 +1338,7 @@
       </reaction>
       <reaction id="r48" name="r48" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate" stoichiometry="1" constant="false"/>
@@ -1357,13 +1357,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r48_1" name="r48_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_pyk" stoichiometry="1" constant="false"/>
@@ -1392,13 +1392,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r50" name="r50" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_alsS" stoichiometry="1" constant="false"/>
@@ -1421,13 +1421,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r50_1" name="r50_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_alsS_2x_molecule_pyruvate" stoichiometry="1" constant="false"/>
@@ -1445,7 +1445,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -1474,7 +1474,7 @@
       </reaction>
       <reaction id="r53" name="r53" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_alsS_molecule_acetolac" stoichiometry="1" constant="false"/>
@@ -1492,13 +1492,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r53_1" name="r53_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_alsS" stoichiometry="1" constant="false"/>
@@ -1517,13 +1517,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r55" name="r55" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_IlvC" stoichiometry="1" constant="false"/>
@@ -1544,13 +1544,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r55_1" name="r55_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_IlvC_metabolite_nadph_molecule_acetolac" stoichiometry="1" constant="false"/>
@@ -1569,7 +1569,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -1598,7 +1598,7 @@
       </reaction>
       <reaction id="r58" name="r58" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_IlvC_metabolite_nadp_molecule_23dih3mebut" stoichiometry="1" constant="false"/>
@@ -1617,13 +1617,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r58_1" name="r58_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_IlvC" stoichiometry="1" constant="false"/>
@@ -1644,13 +1644,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r60" name="r60" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_IlvD" stoichiometry="1" constant="false"/>
@@ -1669,13 +1669,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r60_1" name="r60_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_IlvD_molecule_23dih3mebut" stoichiometry="1" constant="false"/>
@@ -1693,7 +1693,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -1722,7 +1722,7 @@
       </reaction>
       <reaction id="r63" name="r63" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_IlvD_molecule_3me2oxo" stoichiometry="1" constant="false"/>
@@ -1740,13 +1740,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r63_1" name="r63_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_IlvD" stoichiometry="1" constant="false"/>
@@ -1765,13 +1765,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r65" name="r65" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_kivD" stoichiometry="1" constant="false"/>
@@ -1790,13 +1790,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r65_1" name="r65_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_kivD_molecule_3me2oxo" stoichiometry="1" constant="false"/>
@@ -1814,7 +1814,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -1843,7 +1843,7 @@
       </reaction>
       <reaction id="r68" name="r68" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_kivD_molecule_isobutanal" stoichiometry="1" constant="false"/>
@@ -1861,13 +1861,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r68_1" name="r68_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_kivD" stoichiometry="1" constant="false"/>
@@ -1886,13 +1886,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r70" name="r70" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_yahk" stoichiometry="1" constant="false"/>
@@ -1913,13 +1913,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r70_1" name="r70_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal" stoichiometry="1" constant="false"/>
@@ -1938,7 +1938,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -1967,7 +1967,7 @@
       </reaction>
       <reaction id="r73" name="r73" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.03</PropensityType>
+          <PropensityType> type=massaction k=100</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_enzyme_yahk_metabolite_nadp_molecule_isobutanol" stoichiometry="1" constant="false"/>
@@ -1986,13 +1986,13 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.03"/>
+            <localParameter id="k" value="100"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction id="r73_1" name="r73_1" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.003</PropensityType>
+          <PropensityType> type=massaction k=10.0</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_yahk" stoichiometry="1" constant="false"/>
@@ -2013,7 +2013,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.003"/>
+            <localParameter id="k" value="10"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>

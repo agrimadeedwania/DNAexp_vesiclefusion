@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
+  <model id="biocrnpyler_667319" name="biocrnpyler_667319" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
+    <listOfUnitDefinitions>
+      <unitDefinition id="square_metre">
+        <listOfUnits>
+          <unit kind="metre" exponent="2" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment id="default" name="default" spatialDimensions="3" size="1e-06" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="complex_protein_Ribo_transcript_vioC" name="complex_protein_Ribo_transcript_vioC" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_dna_dna_vioC_protein_RNAP" name="complex_dna_dna_vioC_protein_RNAP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="transcript_vioC" name="transcript_vioC" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_Ribo" name="protein_Ribo" compartment="default" initialConcentration="24" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_RNAase" name="protein_RNAase" compartment="default" initialConcentration="6" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_VioC" name="enzyme_VioC" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_RNAase_transcript_vioC" name="complex_protein_RNAase_transcript_vioC" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="dna_dna_vioC" name="dna_dna_vioC" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_RNAP" name="protein_RNAP" compartment="default" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="PTVA" name="PTVA" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="V" name="V" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_PTVA_enzyme_VioC" name="complex_PTVA_enzyme_VioC" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="PTDVA" name="PTDVA" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="DV" name="DV" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_PTDVA_enzyme_VioC" name="complex_PTDVA_enzyme_VioC" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="r0" name="r0" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.027777777777777776</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="dna_dna_vioC" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_dna_dna_vioC_protein_RNAP" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> dna_dna_vioC </ci>
+              <ci> protein_RNAP </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.0277777777777778"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r0_1" name="r0_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.002777777777777778</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_dna_dna_vioC_protein_RNAP" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="dna_dna_vioC" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_dna_dna_vioC_protein_RNAP </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.00277777777777778"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r2" name="r2" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.0001388888888888889</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_dna_dna_vioC_protein_RNAP" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="dna_dna_vioC" stoichiometry="1" constant="false"/>
+          <speciesReference species="transcript_vioC" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_dna_dna_vioC_protein_RNAP </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.000138888888888889"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r3" name="r3" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.027777777777777776</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="transcript_vioC" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_protein_Ribo_transcript_vioC" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> transcript_vioC </ci>
+              <ci> protein_Ribo </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.0277777777777778"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r3_1" name="r3_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.002777777777777778</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_protein_Ribo_transcript_vioC" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="transcript_vioC" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_protein_Ribo_transcript_vioC </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.00277777777777778"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r5" name="r5" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.0005555555555555556</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_protein_Ribo_transcript_vioC" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="transcript_vioC" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioC" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_protein_Ribo_transcript_vioC </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.000555555555555556"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r6" name="r6" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.027777777777777776</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="transcript_vioC" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_protein_RNAase_transcript_vioC" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> transcript_vioC </ci>
+              <ci> protein_RNAase </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.0277777777777778"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r6_1" name="r6_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.002777777777777778</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_protein_RNAase_transcript_vioC" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="transcript_vioC" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_protein_RNAase_transcript_vioC </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.00277777777777778"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r8" name="r8" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.001</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_protein_RNAase_transcript_vioC" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="protein_RNAase" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_protein_RNAase_transcript_vioC </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.001"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r9" name="r9" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.027777777777777776</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="PTVA" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioC" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_PTVA_enzyme_VioC" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> PTVA </ci>
+              <ci> enzyme_VioC </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.0277777777777778"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r9_1" name="r9_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.002777777777777778</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_PTVA_enzyme_VioC" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PTVA" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioC" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_PTVA_enzyme_VioC </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.00277777777777778"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r11" name="r11" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.027777777777777776</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_PTVA_enzyme_VioC" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="V" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioC" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_PTVA_enzyme_VioC </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.0277777777777778"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r12" name="r12" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.027777777777777776</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="PTDVA" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioC" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_PTDVA_enzyme_VioC" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> PTDVA </ci>
+              <ci> enzyme_VioC </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.0277777777777778"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r12_1" name="r12_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.002777777777777778</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_PTDVA_enzyme_VioC" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PTDVA" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioC" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_PTDVA_enzyme_VioC </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.00277777777777778"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r14" name="r14" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.027777777777777776</PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_PTDVA_enzyme_VioC" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="DV" stoichiometry="1" constant="false"/>
+          <speciesReference species="enzyme_VioC" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_PTDVA_enzyme_VioC </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.0277777777777778"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

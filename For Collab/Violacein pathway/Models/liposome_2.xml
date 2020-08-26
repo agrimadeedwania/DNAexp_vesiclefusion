@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
-  <model id="biocrnpyler_392656" name="biocrnpyler_392656" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
+  <model id="biocrnpyler_693963" name="biocrnpyler_693963" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
     <listOfUnitDefinitions>
       <unitDefinition id="square_metre">
         <listOfUnits>
@@ -12,15 +12,15 @@
       <compartment id="default" name="default" spatialDimensions="3" size="1e-06" constant="true"/>
     </listOfCompartments>
     <listOfSpecies>
-      <species id="enzyme_VioC" name="enzyme_VioC" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="protein_RNAP" name="protein_RNAP" compartment="default" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="protein_RNAase" name="protein_RNAase" compartment="default" initialConcentration="6" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="transcript_vioC" name="transcript_vioC" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="protein_Ribo" name="protein_Ribo" compartment="default" initialConcentration="24" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_protein_RNAase_transcript_vioC" name="complex_protein_RNAase_transcript_vioC" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="complex_protein_Ribo_transcript_vioC" name="complex_protein_Ribo_transcript_vioC" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="complex_dna_dna_vioC_protein_RNAP" name="complex_dna_dna_vioC_protein_RNAP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="transcript_vioC" name="transcript_vioC" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_Ribo" name="protein_Ribo" compartment="default" initialConcentration="24" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_RNAase" name="protein_RNAase" compartment="default" initialConcentration="6" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_VioC" name="enzyme_VioC" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_RNAase_transcript_vioC" name="complex_protein_RNAase_transcript_vioC" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="dna_dna_vioC" name="dna_dna_vioC" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_RNAP" name="protein_RNAP" compartment="default" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="PTVA" name="PTVA" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="V" name="V" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="complex_PTVA_enzyme_VioC" name="complex_PTVA_enzyme_VioC" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
@@ -300,7 +300,7 @@
       </reaction>
       <reaction id="r11" name="r11" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=100</PropensityType>
+          <PropensityType> type=massaction k=0.027777777777777776</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_PTVA_enzyme_VioC" stoichiometry="1" constant="false"/>
@@ -318,7 +318,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="100"/>
+            <localParameter id="k" value="0.0277777777777778"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -373,7 +373,7 @@
       </reaction>
       <reaction id="r14" name="r14" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=100</PropensityType>
+          <PropensityType> type=massaction k=0.027777777777777776</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="complex_PTDVA_enzyme_VioC" stoichiometry="1" constant="false"/>
@@ -391,7 +391,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="100"/>
+            <localParameter id="k" value="0.0277777777777778"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
