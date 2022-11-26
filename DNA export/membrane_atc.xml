@@ -13,8 +13,8 @@
       <compartment id="external" name="external" spatialDimensions="3" size="1e-06" units="litre" constant="true"/>
     </listOfCompartments>
     <listOfSpecies>
-      <species id="atc_e" name="atc_e" compartment="external" initialConcentration="10000" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="atc_i" name="atc_i" compartment="internal" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="atc_e" name="atc_e" compartment="external" initialConcentration="10000" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="atc_i" name="atc_i" compartment="internal" initialConcentration="0" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
       <parameter id="kb" name="kb" value="0.002" units="per_second" constant="false"/>
