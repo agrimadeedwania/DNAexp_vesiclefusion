@@ -8,4 +8,5 @@ Jupyter Notebooks and SBML files of my SURF project. The project is about export
 
 ## Code
 1. ATP regen code- Ankita Roychoudhury
-2. DNA export and vesicle fusion code - Agrima Deedwania
+2. Violacein pathway code - Albert Anis
+3. DNA export and vesicle fusion code - Agrima Deedwania
